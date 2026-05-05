@@ -498,3 +498,29 @@ textarea {
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* COLOR PALETTE CUBES */
+
+.palette-lines {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+.palette-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.palette-row span {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid rgba(75,68,56,0.15);
+  box-shadow: 0 12px 28px rgba(75,68,56,0.12);
+}
