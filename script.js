@@ -1,5 +1,5 @@
 const guests = {
-  "kay-and-jeff-kelly": {
+  "kay-jeff-kelly": {
     displayName: "Kay & Jeff Kelly",
     allowedGuests: 2,
     invitedGuests: ["Kay Kelly", "Jeff Kelly"]
@@ -23,13 +23,13 @@ const guests = {
     invitedGuests: ["David Yeager"]
   },
 
-  "austin-and-ashley-kelly": {
+  "austin-ashley-kelly": {
     displayName: "Austin & Ashley Kelly",
     allowedGuests: 2,
     invitedGuests: ["Austin Kelly", "Ashley Kelly"]
   },
 
-  "josh-and-abby-kelly": {
+  "josh-abby-kelly": {
     displayName: "Josh & Abby Kelly",
     allowedGuests: 2,
     invitedGuests: ["Josh Kelly", "Abby Kelly"]
