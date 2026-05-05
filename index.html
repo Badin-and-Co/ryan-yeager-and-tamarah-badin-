@@ -162,40 +162,41 @@
         </div>
       </section>
 
-      <!-- RSVP -->
-<section class="invitation-section reveal rsvp-section">
-  <p class="section-label">RSVP</p>
-  <h2>Kindly Respond</h2>
+    <section class="invitation-section reveal rsvp-section">
+      <p class="section-label">RSVP</p>
+      <h2>Kindly Respond</h2>
 
-  <form id="rsvpForm">
+      <form id="rsvpForm">
+        <label>Main Guest</label>
+        <input type="text" id="nameInput" readonly>
 
-    <label>Main Guest</label>
-    <input type="text" id="nameInput" readonly>
-
-    <label>Will you attend?</label>
-    <select id="attendance" required>
-      <option value="">Select one</option>
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
-    </select>
+        <label>Will you attend?</label>
+        <select id="attendance" required>
+          <option value="">Select one</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
 
     <div id="yesOptions" class="hidden">
-
       <label>Confirming For</label>
       <select id="guestCount"></select>
 
-      <!-- All guest names + meal choices appear here -->
-      <div id="ticketGuestsBox"></div>
+      <label>Main Guest Meal</label>
+      <select id="meal">
+        <option value="">Select meal</option>
+        <option value="Carnivore">Carnivore</option>
+        <option value="Vegetarian">Vegetarian</option>
+      </select>
 
+      <div id="extraGuestsBox"></div>
     </div>
 
-    <label>Notes</label>
-    <textarea id="notes" placeholder="Write anything here..."></textarea>
+        <label>Notes</label>
+        <textarea id="notes" placeholder="Write anything here..."></textarea>
 
-    <button type="submit">Send RSVP</button>
-
-  </form>
-</section>
+      <button type="submit">Send RSVP</button>
+    </form>
+  </section>
 
           <!-- 🔥 NOTES BOX -->
           <label>Notes</label>
