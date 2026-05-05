@@ -207,10 +207,12 @@ body {
 }
 
 .intro h1 {
-  font-family: "Great Vibes", cursive;
-  font-weight: 100;
-  font-size: clamp(4.8rem, 15vw, 8rem);
-  line-height: 0.9;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.2;
+  letter-spacing: 1px;
   color: var(--deep);
 }
 
