@@ -594,3 +594,28 @@ textarea {
   display: block;
   /* margin: 40px auto 0; */
 }
+
+.sage-fabric {
+  background:
+    linear-gradient(
+      90deg,
+      #e2e0d2 0%,
+      #c3c0ab 25%,
+      #aaa88f 50%,
+      #c3c0ab 75%,
+      #e2e0d2 100%
+    );
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.sage-fabric::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,0.2), transparent 40%),
+    radial-gradient(circle at 70% 80%, rgba(0,0,0,0.1), transparent 50%);
+  mix-blend-mode: soft-light;
+}
