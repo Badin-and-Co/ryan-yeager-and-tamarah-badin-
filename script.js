@@ -2,7 +2,7 @@ const guests = {
   "patricia-arenas-ramirez": {
     name: "Patricia Arenas Ramirez",
     allowedGuests: 3,
-    extraGuests: ["Omar Badin", "Blanca Ramirez"]
+    extraGuests: []
   },
 
   "maria-lopez": {
