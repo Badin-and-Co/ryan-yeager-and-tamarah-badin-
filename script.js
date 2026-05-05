@@ -83,7 +83,7 @@ const meal = document.getElementById("meal");
 const guestCount = document.getElementById("guestCount");
 const rsvpForm = document.getElementById("rsvpForm");
 
-guestPreview.textContent = `${currentGuest.displayName}`;
+guestPreview.textContent = `For ${currentGuest.displayName}`;
 guestName.textContent = currentGuest.displayName;
 nameInput.value = currentGuest.displayName;
 
