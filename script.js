@@ -1,6 +1,6 @@
 const guests = {
-  "kay-kelly": {
-    displayName: "Kay Kelly",
+  "kay-and-jeff-kelly": {
+    displayName: "Kay & Jeff Kelly",
     allowedGuests: 2,
     invitedGuests: ["Kay Kelly", "Jeff Kelly"]
   },
@@ -23,29 +23,40 @@ const guests = {
     invitedGuests: ["David Yeager"]
   },
 
-  "austin-&-ashley-kelly": {
+  "austin-and-ashley-kelly": {
     displayName: "Austin & Ashley Kelly",
     allowedGuests: 2,
     invitedGuests: ["Austin Kelly", "Ashley Kelly"]
   },
 
-  "josh-&-abby-kelly": {
+  "josh-and-abby-kelly": {
     displayName: "Josh & Abby Kelly",
     allowedGuests: 2,
     invitedGuests: ["Josh Kelly", "Abby Kelly"]
   },
 
-  "will-&-steph-kelly": {
-    displayName: "Will & Stephanie Kelly",
+  "will-and-steph-kelly": {
+    displayName: "William & Stephanie Kelly",
     allowedGuests: 2,
-    invitedGuests: ["Will Kelly", "Stephanie Kelly"]
+    invitedGuests: ["William Kelly", "Stephanie Kelly"]
   },
 
-  "maria-lopez": {
-    displayName: "Maria Lopez",
+  "patricia-and-omar-badin": {
+    displayName: "Patricia & Omar Badin",
+    allowedGuests: 2,
+    invitedGuests: ["Patricia Badin", "Omar Badin"]
+  },
+  "samantha-and-andrei-szabo": {
+    displayName: "Samantha & Andrei Szabo",
+    allowedGuests: 2,
+    invitedGuests: ["Samantha Szabo", "Andrei Szabo"]
+  },
+  "omar-badin": {
+    displayName: "Omar Badin Arenas",
     allowedGuests: 1,
-    invitedGuests: ["Maria Lopez"]
-  }
+    invitedGuests: ["Omar Badin Arenas"]
+  },
+  
 };
 
 const params = new URLSearchParams(window.location.search);
