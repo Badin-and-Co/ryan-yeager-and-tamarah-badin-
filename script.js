@@ -1,150 +1,60 @@
 const guests = {
   "kay-kelly": {
-    name: "Kay Kelly",
+    displayName: "Kay Kelly",
     allowedGuests: 2,
-    extraGuests: ["Jeff Kelly"]
+    invitedGuests: ["Kay Kelly", "Jeff Kelly"]
   },
 
   "nicole-yeager": {
-    name: "Nicole Yeager",
+    displayName: "Nicole Yeager",
     allowedGuests: 1,
-    extraGuests: []
+    invitedGuests: ["Nicole Yeager"]
   },
 
   "stephen-yeager": {
-    name: "Stephen Yeager",
+    displayName: "Stephen Yeager",
     allowedGuests: 1,
-    extraGuests: []
+    invitedGuests: ["Stephen Yeager"]
   },
 
   "david-yeager": {
-    name: "David Yeager",
+    displayName: "David Yeager",
     allowedGuests: 1,
-    extraGuests: []
+    invitedGuests: ["David Yeager"]
   },
 
   "austin-&-ashley-kelly": {
-    name: "Austin & Ashley Kelly",
+    displayName: "Austin & Ashley Kelly",
     allowedGuests: 2,
+    invitedGuests: ["Austin Kelly", "Ashley Kelly"]
   },
-   "josh-&-abby-kelly": {
-    name: "Josh & Abby Kelly",
+
+  "josh-&-abby-kelly": {
+    displayName: "Josh & Abby Kelly",
     allowedGuests: 2,
+    invitedGuests: ["Josh Kelly", "Abby Kelly"]
   },
-   "will-&-steph-kelly": {
-    name: "Will & Stephanie Kelly",
+
+  "will-&-steph-kelly": {
+    displayName: "Will & Stephanie Kelly",
     allowedGuests: 2,
+    invitedGuests: ["Will Kelly", "Stephanie Kelly"]
   },
-   "maria-lopez": {
-    name: "Maria Lopez",
+
+  "maria-lopez": {
+    displayName: "Maria Lopez",
     allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-   "maria-lopez": {
-    name: "Maria Lopez",
-    allowedGuests: 1,
-    extraGuests: []
-  },
-  
+    invitedGuests: ["Maria Lopez"]
+  }
 };
 
 const params = new URLSearchParams(window.location.search);
 const guestKey = params.get("guest");
 
 let currentGuest = guests[guestKey] || {
-  name: "Beautiful Guest",
+  displayName: "Beautiful Guest",
   allowedGuests: 1,
-  extraGuests: []
+  invitedGuests: ["Beautiful Guest"]
 };
 
 const envelopeScreen = document.getElementById("envelopeScreen");
@@ -162,9 +72,9 @@ const meal = document.getElementById("meal");
 const guestCount = document.getElementById("guestCount");
 const rsvpForm = document.getElementById("rsvpForm");
 
-guestPreview.textContent = `For ${currentGuest.name}`;
-guestName.textContent = currentGuest.name;
-nameInput.value = currentGuest.name;
+guestPreview.textContent = `For ${currentGuest.displayName}`;
+guestName.textContent = currentGuest.displayName;
+nameInput.value = currentGuest.displayName;
 
 guestLimitText.textContent =
   `We have reserved ${currentGuest.allowedGuests} seat${currentGuest.allowedGuests > 1 ? "s" : ""} in your honor.`;
@@ -178,6 +88,8 @@ function buildGuestCountOptions() {
     option.textContent = `${i} guest${i > 1 ? "s" : ""}`;
     guestCount.appendChild(option);
   }
+
+  guestCount.value = currentGuest.allowedGuests;
 }
 
 buildGuestCountOptions();
@@ -191,66 +103,73 @@ openEnvelope.addEventListener("click", () => {
 attendance.addEventListener("change", () => {
   if (attendance.value === "Yes") {
     yesOptions.classList.remove("hidden");
-    meal.required = true;
-    buildExtraGuestFields();
+
+    if (meal) {
+      meal.required = false;
+      meal.closest("label")?.classList.add("hidden");
+      meal.classList.add("hidden");
+    }
+
+    buildInvitedGuestFields();
   } else {
     yesOptions.classList.add("hidden");
-    meal.required = false;
-    meal.value = "";
-    clearExtraGuestFields();
+
+    if (meal) {
+      meal.required = false;
+      meal.value = "";
+    }
+
+    clearInvitedGuestFields();
   }
 });
 
 guestCount.addEventListener("change", () => {
-  buildExtraGuestFields();
+  buildInvitedGuestFields();
 });
 
-function clearExtraGuestFields() {
+function clearInvitedGuestFields() {
   const extraGuestsBox = document.getElementById("extraGuestsBox");
   if (extraGuestsBox) {
     extraGuestsBox.innerHTML = "";
   }
 }
 
-function buildExtraGuestFields() {
+function buildInvitedGuestFields() {
   const extraGuestsBox = document.getElementById("extraGuestsBox");
   if (!extraGuestsBox) return;
 
   extraGuestsBox.innerHTML = "";
 
   const totalGuestsSelected = Number(guestCount.value);
-  const extraGuestAmount = totalGuestsSelected - 1;
-
-  if (extraGuestAmount <= 0) return;
 
   const title = document.createElement("p");
   title.className = "extra-guest-title";
-  title.textContent = "Please enter each additional guest name and meal choice:";
+  title.textContent = "Please confirm each guest name and meal choice:";
   extraGuestsBox.appendChild(title);
 
-  for (let i = 1; i <= extraGuestAmount; i++) {
-    const suggestedName =
-      currentGuest.extraGuests && currentGuest.extraGuests[i - 1]
-        ? currentGuest.extraGuests[i - 1]
-        : "";
+  for (let i = 0; i < totalGuestsSelected; i++) {
+    const guestRealName = currentGuest.invitedGuests[i] || "";
+
+    const guestWrapper = document.createElement("div");
+    guestWrapper.className = "guest-meal-box";
 
     const labelName = document.createElement("label");
     labelName.textContent = `Guest ${i + 1} Name`;
 
     const input = document.createElement("input");
     input.type = "text";
-    input.className = "extraGuestName";
-    input.name = `extraGuest${i + 1}Name`;
+    input.className = "invitedGuestName";
+    input.name = `guest${i + 1}Name`;
     input.placeholder = `Guest ${i + 1} full name`;
-    input.value = suggestedName;
+    input.value = guestRealName;
     input.required = true;
 
     const labelMeal = document.createElement("label");
-    labelMeal.textContent = `Guest ${i + 1} Meal`;
+    labelMeal.textContent = `${guestRealName || `Guest ${i + 1}`} Meal`;
 
     const select = document.createElement("select");
-    select.className = "extraGuestMeal";
-    select.name = `extraGuest${i + 1}Meal`;
+    select.className = "invitedGuestMeal";
+    select.name = `guest${i + 1}Meal`;
     select.required = true;
 
     select.innerHTML = `
@@ -259,10 +178,16 @@ function buildExtraGuestFields() {
       <option value="Vegetarian">Vegetarian</option>
     `;
 
-    extraGuestsBox.appendChild(labelName);
-    extraGuestsBox.appendChild(input);
-    extraGuestsBox.appendChild(labelMeal);
-    extraGuestsBox.appendChild(select);
+    input.addEventListener("input", () => {
+      labelMeal.textContent = `${input.value.trim() || `Guest ${i + 1}`} Meal`;
+    });
+
+    guestWrapper.appendChild(labelName);
+    guestWrapper.appendChild(input);
+    guestWrapper.appendChild(labelMeal);
+    guestWrapper.appendChild(select);
+
+    extraGuestsBox.appendChild(guestWrapper);
   }
 }
 
@@ -270,7 +195,6 @@ rsvpForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
   const attending = attendance.value;
-  const selectedMeal = attending === "Yes" ? meal.value : "Not applicable";
   const selectedGuestCount = attending === "Yes" ? guestCount.value : "0";
   const notes = document.getElementById("notes") ? document.getElementById("notes").value : "";
 
@@ -279,47 +203,44 @@ rsvpForm.addEventListener("submit", function(event) {
     return;
   }
 
-  if (attending === "Yes" && !selectedMeal) {
-    alert("Please select a meal preference.");
-    return;
+  let invitedGuestsInfo = [];
+
+  if (attending === "Yes") {
+    const invitedGuestNames = document.querySelectorAll(".invitedGuestName");
+    const invitedGuestMeals = document.querySelectorAll(".invitedGuestMeal");
+
+    for (let i = 0; i < invitedGuestNames.length; i++) {
+      const guestNameValue = invitedGuestNames[i].value.trim();
+      const mealChoice = invitedGuestMeals[i] ? invitedGuestMeals[i].value : "";
+
+      if (!guestNameValue) {
+        alert(`Please enter Guest ${i + 1} name.`);
+        return;
+      }
+
+      if (!mealChoice) {
+        alert(`Please select Guest ${i + 1} meal.`);
+        return;
+      }
+
+      invitedGuestsInfo.push(
+        `Guest ${i + 1}: ${guestNameValue} - Meal: ${mealChoice}`
+      );
+    }
   }
 
-  const extraGuestNames = document.querySelectorAll(".extraGuestName");
-  const extraGuestMeals = document.querySelectorAll(".extraGuestMeal");
-
-  let extraGuestsInfo = [];
-
-  extraGuestNames.forEach((input, index) => {
-    const mealChoice = extraGuestMeals[index] ? extraGuestMeals[index].value : "";
-
-    if (!input.value.trim()) {
-      alert(`Please enter Guest ${index + 2} name.`);
-      return;
-    }
-
-    if (!mealChoice) {
-      alert(`Please select Guest ${index + 2} meal.`);
-      return;
-    }
-
-    extraGuestsInfo.push(
-      `Guest ${index + 2}: ${input.value.trim()} - Meal: ${mealChoice}`
-    );
-  });
-
   document.getElementById("guestCodeInput").value = guestKey || "No guest code";
-  document.getElementById("mainGuestInput").value = currentGuest.name;
+  document.getElementById("mainGuestInput").value = currentGuest.displayName;
   document.getElementById("extraGuestsInput").value =
-    extraGuestsInfo.length > 0 ? extraGuestsInfo.join(", ") : "None";
+    invitedGuestsInfo.length > 0 ? invitedGuestsInfo.join(", ") : "Not attending";
 
   const formData = new FormData(rsvpForm);
 
   formData.append("guestCode", guestKey || "No guest code");
-  formData.append("mainGuest", currentGuest.name);
+  formData.append("invitationName", currentGuest.displayName);
   formData.append("attendance", attending);
-  formData.append("mainGuestMeal", selectedMeal);
   formData.append("guestCount", selectedGuestCount);
-  formData.append("extraGuests", extraGuestsInfo.length > 0 ? extraGuestsInfo.join(", ") : "None");
+  formData.append("guestsAndMeals", invitedGuestsInfo.length > 0 ? invitedGuestsInfo.join(", ") : "Not attending");
   formData.append("notes", notes);
   formData.append("submittedAt", new Date().toLocaleString());
 
@@ -334,9 +255,10 @@ rsvpForm.addEventListener("submit", function(event) {
       if (response.ok) {
         alert("Thank you! Your RSVP has been saved.");
         rsvpForm.reset();
-        nameInput.value = currentGuest.name;
-        clearExtraGuestFields();
+        nameInput.value = currentGuest.displayName;
+        clearInvitedGuestFields();
         yesOptions.classList.add("hidden");
+        buildGuestCountOptions();
       } else {
         alert("Something went wrong. Please try again.");
       }
