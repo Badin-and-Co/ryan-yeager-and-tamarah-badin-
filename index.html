@@ -32,7 +32,6 @@
 
   <!-- INVITATION -->
   <main id="invitationPage" class="hidden invitation-background">
-
     <div class="invitation-card">
 
       <!-- INTRO -->
@@ -100,17 +99,17 @@
 
         <div class="photo-band">
           <div class="photo-track">
-            <img src="images/photo1.jpg">
-            <img src="images/photo2.jpg">
-            <img src="images/photo3.jpg">
-            <img src="images/photo4.jpg">
-            <img src="images/photo5.jpg">
+            <img src="images/photo1.jpg" alt="Memory photo 1">
+            <img src="images/photo2.jpg" alt="Memory photo 2">
+            <img src="images/photo3.jpg" alt="Memory photo 3">
+            <img src="images/photo4.jpg" alt="Memory photo 4">
+            <img src="images/photo5.jpg" alt="Memory photo 5">
 
-            <img src="images/photo1.jpg">
-            <img src="images/photo2.jpg">
-            <img src="images/photo3.jpg">
-            <img src="images/photo4.jpg">
-            <img src="images/photo5.jpg">
+            <img src="images/photo1.jpg" alt="Memory photo 1">
+            <img src="images/photo2.jpg" alt="Memory photo 2">
+            <img src="images/photo3.jpg" alt="Memory photo 3">
+            <img src="images/photo4.jpg" alt="Memory photo 4">
+            <img src="images/photo5.jpg" alt="Memory photo 5">
           </div>
         </div>
       </section>
@@ -162,51 +161,44 @@
         </div>
       </section>
 
-    <section class="invitation-section reveal rsvp-section">
-      <input type="hidden" name="guestCode" id="guestCodeInput">
-      <input type="hidden" name="mainGuest" id="mainGuestInput">
-      <input type="hidden" name="extraGuests" id="extraGuestsInput">
-      <p class="section-label">RSVP</p>
-      <h2>Kindly Respond</h2>
+      <!-- RSVP -->
+      <section class="invitation-section reveal rsvp-section">
+        <p class="section-label">RSVP</p>
+        <h2>Kindly Respond</h2>
 
-      <form id="rsvpForm" action="https://formspree.io/f/xojrdedq" method="POST">
-        <label>Main Guest</label>
-        <input type="text" id="nameInput" readonly>
+        <form id="rsvpForm" action="https://formspree.io/f/xojrdedq" method="POST">
+          <input type="hidden" name="guestCode" id="guestCodeInput">
+          <input type="hidden" name="mainGuest" id="mainGuestInput">
+          <input type="hidden" name="extraGuests" id="extraGuestsInput">
 
-        <label>Will you attend?</label>
-        <select id="attendance" required>
-          <option value="">Select one</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-        </select>
+          <label>Main Guest</label>
+          <input type="text" id="nameInput" name="displayedMainGuest" readonly>
 
-    <div id="yesOptions" class="hidden">
-      <label>Confirming For</label>
-      <select id="guestCount"></select>
+          <label>Will you attend?</label>
+          <select id="attendance" name="attendance" required>
+            <option value="">Select one</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
 
-      <label>Main Guest Meal</label>
-      <select id="meal">
-        <option value="">Select meal</option>
-        <option value="Carnivore">Carnivore</option>
-        <option value="Vegetarian">Vegetarian</option>
-      </select>
+          <div id="yesOptions" class="hidden">
+            <label>Confirming For</label>
+            <select id="guestCount" name="guestCount"></select>
 
-      <div id="extraGuestsBox"></div>
-    </div>
+            <label>Main Guest Meal</label>
+            <select id="meal" name="mainGuestMeal">
+              <option value="">Select meal</option>
+              <option value="Carnivore">Carnivore</option>
+              <option value="Vegetarian">Vegetarian</option>
+            </select>
 
-        <label>Notes</label>
-        <textarea id="notes" placeholder="Write anything here..."></textarea>
+            <div id="extraGuestsBox"></div>
+          </div>
 
-      <button type="submit">Send RSVP</button>
-    </form>
-  </section>
-
-          <!-- 🔥 NOTES BOX -->
           <label>Notes</label>
-          <textarea id="notes" placeholder="Write anything here..."></textarea>
+          <textarea id="notes" name="notes" placeholder="Write anything here..."></textarea>
 
           <button type="submit">Send RSVP</button>
-
         </form>
       </section>
 
