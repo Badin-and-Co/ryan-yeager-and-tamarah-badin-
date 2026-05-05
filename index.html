@@ -163,10 +163,13 @@
       </section>
 
     <section class="invitation-section reveal rsvp-section">
+      <input type="hidden" name="guestCode" id="guestCodeInput">
+      <input type="hidden" name="mainGuest" id="mainGuestInput">
+      <input type="hidden" name="extraGuests" id="extraGuestsInput">
       <p class="section-label">RSVP</p>
       <h2>Kindly Respond</h2>
 
-      <form id="rsvpForm">
+      <form id="rsvpForm" action="https://formspree.io/f/YOUR_CODE_HERE" method="POST">
         <label>Main Guest</label>
         <input type="text" id="nameInput" readonly>
 
