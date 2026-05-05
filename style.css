@@ -590,5 +590,5 @@ textarea {
   max-width: 420px;   /* controls how small it is */
   height: auto;
   display: block;
-  margin: 40px auto 0;
+  /* margin: 40px auto 0; */
 }
