@@ -31,7 +31,7 @@ const guestKey = params.get("guest");
 
 let currentGuest = guests[guestKey] || {
   name: "Beautiful Guest",
-  allowedGuests: 1
+  allowedGuests: 1,
   extraGuests: []
 };
 
