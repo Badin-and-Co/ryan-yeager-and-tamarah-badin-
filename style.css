@@ -524,3 +524,11 @@ textarea {
   border: 1px solid rgba(75,68,56,0.15);
   box-shadow: 0 12px 28px rgba(75,68,56,0.12);
 }
+
+.palette-row span {
+  transition: 0.3s ease;
+}
+
+.palette-row span:hover {
+  transform: scale(1.08);
+}
