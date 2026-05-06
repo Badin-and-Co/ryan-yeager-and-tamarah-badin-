@@ -9,13 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- ENVELOPE -->
   <section id="envelopeScreen" class="envelope-screen">
     <div class="envelope-wrapper" id="openEnvelope">
       <div class="closed-envelope">
         <div class="envelope-back"></div>
-			<div class="envelope-letter">
-          	<p></p> 
+        <div class="envelope-letter">
+          <p></p>
         </div>
         <div class="envelope-left"></div>
         <div class="envelope-right"></div>
@@ -27,10 +28,23 @@
       <h2 id="guestPreview">...</h2>
     </div>
   </section>
+
   <!-- INVITATION -->
   <main id="invitationPage" class="hidden invitation-background">
+
+    <!-- TINY TOP MENU -->
+    <nav class="mini-nav">
+      <a href="#palette">Palette</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#venue">Venue</a>
+      <a href="#registry">Registry</a>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+
     <div class="invitation-card">
-    <section class="intro">                                      <!-- INTRO -->
+
+      <!-- INTRO -->
+      <section class="intro">
         <p class="top-text">Saturday February 7th</p>
 
         <h1>Ryan Cristopher Yeager</h1>
@@ -38,75 +52,85 @@
         <h1>Tamarah Badin Arenas</h1>
 
         <p class="invite-text">joyfully invite you to celebrate their wedding</p>
+
         <div class="guest-name-box">
           <p id="guestName">...</p>
           <span id="guestLimitText">...</span>
         </div>
       </section>
-      <section class="invitation-section reveal">  <!-- PHOTO BAND -->
+
+      <!-- PHOTO BAND -->
+      <section id="photos" class="invitation-section reveal">
         <p class="section-label">A Little Glimpse</p>
+
         <div class="photo-band">
-            <div class="photo-track">
-              <img src="photo1.png">
-              <img src="photo2.png">
-              <img src="photo3.png">
-              <img src="photo4.png">
-              <img src="photo5.png">
-              <img src="photo6.png">
-              <img src="photo7.png">
-              <img src="photo8.png">
-              <img src="photo1.png">
-              <img src="photo2.png">
-              <img src="photo3.png">
-              <img src="photo4.png">
-              <img src="photo5.png">
-              <img src="photo6.png">
-              <img src="photo7.png">
-              <img src="photo8.png">
-            </div>
+          <div class="photo-track">
+            <img src="photo1.jpg">
+            <img src="photo2.jpg">
+            <img src="photo3.jpg">
+            <img src="photo4.jpg">
+            <img src="photo5.jpg">
+            <img src="photo6.jpg">
+            <img src="photo7.jpg">
+            <img src="photo8.jpg">
+
+            <img src="photo1.jpg">
+            <img src="photo2.jpg">
+            <img src="photo3.jpg">
+            <img src="photo4.jpg">
+            <img src="photo5.jpg">
+            <img src="photo6.jpg">
+            <img src="photo7.jpg">
+            <img src="photo8.jpg">
+          </div>
         </div>
       </section>
-      <section class="invitation-section reveal">        <!-- COLOR PALETTE -->
+
+      <!-- COLOR PALETTE -->
+      <section id="palette" class="invitation-section reveal">
         <p class="section-label">Color Palette</p>
         <h2>Soft Neutrals</h2>
 
         <div class="palette-lines">
-    		<div class="palette-row">
-      			<span style="background:#fffaf3"></span>
-      			<span style="background:#f3e7d6"></span>
-      			<span style="background:#dfc8a9"></span>
-      			<span style="background:#c5a77d"></span>
-      			<span style="background:#a8895e"></span>
-    		</div>
+          <div class="palette-row">
+            <span style="background:#fffaf3"></span>
+            <span style="background:#f3e7d6"></span>
+            <span style="background:#dfc8a9"></span>
+            <span style="background:#c5a77d"></span>
+            <span style="background:#a8895e"></span>
+          </div>
 
-    		<div class="palette-row">
-      			<span style="background:#eef3e8"></span>
-      			<span style="background:#cfdabe"></span>
-      			<span style="background:#9aaa7e"></span>
-      			<span style="background:#6f7f55"></span>
-      			<span style="background:#3f4a32"></span>
-    		</div>
+          <div class="palette-row">
+            <span style="background:#eef3e8"></span>
+            <span style="background:#cfdabe"></span>
+            <span style="background:#9aaa7e"></span>
+            <span style="background:#6f7f55"></span>
+            <span style="background:#3f4a32"></span>
+          </div>
 
-    		<div class="palette-row">
-      			<span style="background:#f1e6d9"></span>
-      			<span style="background:#d6bfa4"></span>
-      			<span style="background:#b28d6b"></span>
-      			<span style="background:#825d41"></span>
-      			<span style="background:#4b3324"></span>
-    		</div>
-    		
-    	   <div class="palette-row">
-    			<span style="background:#dde3d7"></span>
-				<span style="background:#c7d1c2"></span>
-				<span style="background:#aebaa8"></span>
-				<span style="background:#96a58f"></span>
-				<span style="background:#7f8f79"></span> <!-- deeper sage (not too dark) -->
-		   </div>
+          <div class="palette-row">
+            <span style="background:#f1e6d9"></span>
+            <span style="background:#d6bfa4"></span>
+            <span style="background:#b28d6b"></span>
+            <span style="background:#825d41"></span>
+            <span style="background:#4b3324"></span>
+          </div>
+
+          <div class="palette-row">
+            <span style="background:#dde3d7"></span>
+            <span style="background:#c7d1c2"></span>
+            <span style="background:#aebaa8"></span>
+            <span style="background:#96a58f"></span>
+            <span style="background:#7f8f79"></span>
+          </div>
         </div>
       </section>
-      <section class="invitation-section reveal">   <!-- SCHEDULE -->
+
+      <!-- SCHEDULE -->
+      <section id="itinerary" class="invitation-section reveal">
         <p class="section-label">Schedule</p>
         <h2>The Evening</h2>
+
         <div class="schedule">
           <div><strong>4:30 PM</strong><span>Ceremony</span></div>
           <div><strong>5:00 PM</strong><span>Cocktail Hour</span></div>
@@ -114,37 +138,49 @@
           <div><strong>7:30 PM</strong><span>Dancing</span></div>
         </div>
       </section>
-      <section class="invitation-section reveal">  <!-- LOCATION -->
+
+      <!-- LOCATION -->
+      <section id="venue" class="invitation-section reveal">
         <p class="section-label">Location</p>
         <h2>Venue Name</h2>
+
         <p class="soft-copy">
           123 Wedding Avenue<br>
           Houston, Texas
         </p>
+
         <a href="https://maps.google.com" target="_blank" class="invitation-button">View Map</a>
       </section>
-      <section class="invitation-section reveal">      <!-- REGISTRY -->
- 		 <p class="section-label">Registry</p>
- 		 <h2>With Love</h2>
-  		 <p class="soft-copy">
-   	 	Your presence is our greatest gift. If you would like to bless us further, these are our gift options.
- 		 </p>
-  		<div class="registry-cubes">
-    		<div class="registry-cube">
-      		<h3>Deposit</h3>
-      		<p>Bank deposit information can be shared upon request.</p>
-    	</div>
-    	<div class="registry-cube">
-      		<h3>Cash</h3>
-      		<p>Cash gifts may be given in person on the wedding day.</p>
-    	</div>
-    	<div class="registry-cube">
-      		<h3>Zelle</h3>
-      		<p>Zelle gifts may be sent to:<br><strong>Your Zelle Info</strong></p>
-   	    </div>
-  		</div>
-	</section>
-    <section class="invitation-section reveal rsvp-section">      <!-- RSVP -->
+
+      <!-- REGISTRY -->
+      <section id="registry" class="invitation-section reveal">
+        <p class="section-label">Registry</p>
+        <h2>With Love</h2>
+
+        <p class="soft-copy">
+          Your presence is our greatest gift. If you would like to bless us further, these are our gift options.
+        </p>
+
+        <div class="registry-cubes">
+          <div class="registry-cube">
+            <h3>Deposit</h3>
+            <p>Bank deposit information can be shared upon request.</p>
+          </div>
+
+          <div class="registry-cube">
+            <h3>Cash</h3>
+            <p>Cash gifts may be given in person on the wedding day.</p>
+          </div>
+
+          <div class="registry-cube">
+            <h3>Zelle</h3>
+            <p>Zelle gifts may be sent to:<br><strong>Your Zelle Info</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RSVP -->
+      <section id="rsvp" class="invitation-section reveal rsvp-section">
         <p class="section-label">RSVP</p>
         <h2>Kindly Respond</h2>
 
@@ -183,7 +219,8 @@
           <button type="submit">Send RSVP</button>
         </form>
       </section>
-	</div>
+
+    </div>
   </main>
 
   <script src="script.js"></script>
