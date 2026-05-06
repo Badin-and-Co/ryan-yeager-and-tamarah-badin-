@@ -575,21 +575,21 @@ textarea {
 
 @media (max-width: 600px) {
   .photo-track {
-    gap: 12px;
-    animation-duration: 28s;
+    gap: 0px;
+    animation-duration: 45s;
   }
 
   .photo-track img {
-    width: 115px;
-    height: 165px;
-    border-radius: 18px;
+    width: 300px;
+    height: 350px;
+    border-radius: 9px;
   }
 }
 /* DRESS CODE IMAGE SIZE */
 
 .dresscode-img {
-  width: 100%;
-  max-width: 420px;   /* controls how small it is */
+  width: 50%;
+  max-width: 350px;   /* controls how small it is */
   height: auto;
   display: block;
   /* margin: 40px auto 0; */
