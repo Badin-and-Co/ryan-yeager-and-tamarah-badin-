@@ -578,12 +578,12 @@ textarea {
   width: 100%;
   overflow: hidden;
   margin-top: 30px;
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 .photo-track {
   display: flex;
-  gap: 18px;
+  gap: 0px;
   width: max-content;
   animation: photoScroll 35s linear infinite;
 }
@@ -592,7 +592,7 @@ textarea {
   width: 150px;
   height: 210px;
   object-fit: cover;
-  border-radius: 22px;
+  border-radius: 0px;
   flex-shrink: 0;
   box-shadow: 0 14px 35px rgba(75, 68, 56, 0.16);
 }
