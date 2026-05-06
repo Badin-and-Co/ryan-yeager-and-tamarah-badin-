@@ -517,6 +517,15 @@ button {
     text-align: center;
     gap: 6px;
   }
+    .registry-cubes {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .registry-cube {
+    width: 100%;
+    min-height: 160px;
+  }
 }
 
 textarea {
