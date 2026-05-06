@@ -280,7 +280,7 @@ body {
 }
 
 .invitation-section {
-  padding: 45px 35px;
+  padding: 80px 35px;
   text-align: center;
   position: relative;
 }
@@ -297,7 +297,7 @@ body {
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: clamp(2.1rem, 6vw, 3.6rem);
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .soft-copy {
@@ -309,7 +309,7 @@ body {
 
 /* PALETTE */
 
-.palette {
+.palette{
   display: flex;
   justify-content: center;
   gap: 13px;
@@ -424,14 +424,10 @@ button {
 /* MOBILE */
 
 @media (max-width: 600px) {
-  .invitation-section {
-    padding: 42px 24px;
+  .closed-envelope {
+    width: 260px;
+    height: 175px;
   }
-
-  .intro {
-    padding: 60px 22px 45px;
-  }
-}
 
   .envelope-left {
     border-top: 88px solid transparent;
