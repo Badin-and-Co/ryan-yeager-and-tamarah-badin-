@@ -327,7 +327,7 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Keila Ostos", "Francisco Olea"]
   },
-    "Vale-saraiba": {
+    "vale-saraiba": {
     displayName: "Valeria Saraiba & Santiago Villar",
     allowedGuests: 2,
     invitedGuests: ["Valeria Saraiba","Santiago Villar"]
@@ -337,11 +337,137 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Yoy Armenta","Javi Perez"]
   },
-      "arlette-rodriguez": {
+    "arlette-rodriguez": {
     displayName: "Roberto & Arlette Rodriguez",
     allowedGuests: 2,
     invitedGuests: ["Arlette Rodriguez","Roberto Rodriguez"]
   },
+    "luis-rodriguez": {
+    displayName: "Luis Emilio Rodriguez & Julia Sanchez",
+    allowedGuests: 2,
+    invitedGuests: ["Luis Emilio Rodriguez","Julia Sanchez" ]
+  },
+    "juan-mendez": {
+    displayName: "Juan & Erica Mendez",
+    allowedGuests: 2,
+    invitedGuests: ["Juan Mendez", "Erica Mendez"]
+  },
+    "olidia-castilla": {
+    displayName: "Olidia Castilla & Virgilio Farias",
+    allowedGuests: 2,
+    invitedGuests: ["Olidia Castilla", "Virgilio Farias]
+  },
+    "maribel-adarme": {
+    displayName: "Raul & Maribel Adarme",
+    allowedGuests: 2,
+    invitedGuests: ["Raul Adarme","Maribel Adarme"]
+  },
+    "armando-anguiano": {
+    displayName: "Armando & Sara Anguiano",
+    allowedGuests: 2,
+    invitedGuests: ["Armando Anguiano", "Sara Anguiano"]
+  },
+    "ricardo-diaz": {
+    displayName: "Ricardo & Mafer Diaz",
+    allowedGuests: 2,
+    invitedGuests: ["Ricardo Diaz", "Mafer Diaz"]
+  },
+    "miriam-ramirez": {
+    displayName: "Mauricio & Miriam Ramirez",
+    allowedGuests: 2,
+    invitedGuests: ["Mauricio Ramirez","Miriam Ramirez"]
+  },
+    "omar-escalante": {
+    displayName: "Omar & Seidi Escalante",
+    allowedGuests: 2,
+    invitedGuests: ["Omar Escalante","Seidi Escalante"]
+  },
+    "sam-escalante": {
+    displayName: "Sam Julio Escalante",
+    allowedGuests: 1,
+    invitedGuests: ["Sam Julio Escalante"]
+  },
+    "santiago-aguero": {
+    displayName: "Santiago Aguero & Regina chavela",
+    allowedGuests: 2,
+    invitedGuests: ["Santiago Aguero","Regina Chavela"]
+  },
+    "caro-delarosa": {
+    displayName: "Caro De La Rosa",
+    allowedGuests: 2,
+    invitedGuests: ["Caro De La Rosa","Plus one"]
+  },
+    "ilze-castillo": {
+    displayName: "Ilze Castillo",
+    allowedGuests: 2,
+    invitedGuests: ["Ilze Castillo", "Plus one"]
+  },
+    "iliana-valle": {
+    displayName: "Illiana Valle",
+    allowedGuests: 1,
+    invitedGuests: ["Illiana Valle"]
+  },
+    "christina-ponce": {
+    displayName: "Roberto & Christina Ponce",
+    allowedGuests: 2,
+    invitedGuests: ["Roberto Ponce","Christina Ponce"]
+  },
+    "maricarmen-velazquez": {
+    displayName: "Daniel & Maricarmen Velazquez",
+    allowedGuests: 2,
+    invitedGuests: ["Daniel Velazquez","Maricarmen Velazquez"]
+  },
+    "abi-adigun": {
+    displayName: "Abi & Vivian Adigun",
+    allowedGuests: 2,
+    invitedGuests: ["Abi Adigun", "Vivian Adigun"]
+  },
+    "claudia-": {
+    displayName: "Emmanuel & Claudia ",
+    allowedGuests: 2,
+    invitedGuests: ["Claudia ", "Emmanuel"]
+  },
+    "pam-alvarez": {
+    displayName: "Pam",
+    allowedGuests: 2,
+    invitedGuests: ["Pam",""]
+  },
+    "mariana-paige": {
+    displayName: "Jonathan & Mariana Paige",
+    allowedGuests: 2,
+    invitedGuests: ["Mariana Paige", "Jonathan Paige"]
+  },
+    "ale-delacampa": {
+    displayName: "Alejandra De La Campa & Billy Zapata",
+    allowedGuests: 2,
+    invitedGuests: ["Alejandra De La Campa", "Billy Zapata"]
+  },
+    "martha-ibarrondo": {
+    displayName: "Martha Ibarrondo",
+    allowedGuests: 1,
+    invitedGuests: ["Martha Ibarrondo"]
+  },
+    "jack-ocampo": {
+    displayName: "Jack & Andrea Ocampo",
+    allowedGuests: 1,
+    invitedGuests: ["Jack Ocampo", "Andrea Ocampo"]
+  },
+    "andrea-gali": {
+    displayName: "Tony & Andrea Gali",
+    allowedGuests: 2,
+    invitedGuests: ["Tony Gali", "Andrea Gali"]
+  },
+    "miguel-amozurrutia": {
+    displayName: "Miguel & Lorenza Amozurrutia",
+    allowedGuests: 2,
+    invitedGuests: ["Miguel Amozurrutia", "Lorenza Amozurrutia"]
+  },
+    "emma-coutee": {
+    displayName: "Quojan & Emma Coutee",
+    allowedGuests: 2,
+    invitedGuests: ["Quojan Coutee", "Emma Coutee"]
+  },  
+  
 };
 
 const params = new URLSearchParams(window.location.search);
