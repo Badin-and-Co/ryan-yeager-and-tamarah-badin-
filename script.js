@@ -232,7 +232,106 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Ayan Kundi"]
   },
-  
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
+      "ayan-kundi": {
+    displayName: "Ayan Kundi",
+    allowedGuests: 1,
+    invitedGuests: ["Ayan Kundi"]
+  },
 };
 
 const params = new URLSearchParams(window.location.search);
