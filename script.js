@@ -232,105 +232,105 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Ayan Kundi"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "david-tauber": {
+    displayName: "David Tauber",
+    allowedGuests: 2,
+    invitedGuests: ["David Tauber","Plus one"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "abraham-seman": {
+    displayName: "Abraham Seman & Franchesca Karam",
+    allowedGuests: 2,
+    invitedGuests: ["Abraham Seman","Franchesca Karam"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "michelle-farias": {
+    displayName: "Daniel Schnoor & Michelle Farias",
+    allowedGuests: 2,
+    invitedGuests: ["Daniel Schnoor","Michelle Farias"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "lore-laurent": {
+    displayName: "Marco & Lore Laurent",
+    allowedGuests: 2,
+    invitedGuests: ["Marco Laurent", "Lore Laurent"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
+    "denisse-laurent": {
+    displayName: "Denisse Laurent",
     allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    invitedGuests: ["Denisse Laurent"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
+    "mat-laurent": {
+    displayName: "Mat Laurent",
     allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    invitedGuests: ["Mat Laurent"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "jan-laurent": {
+    displayName: "Jan & Adalina Laurent",
+    allowedGuests: 2,
+    invitedGuests: ["Jan Laurent","Adalina Laurent"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "cuco-gomez": {
+    displayName: "Cuco & Lupita Gomez",
+    allowedGuests: 3,
+    invitedGuests: ["Cuco Gomez", "Lupita Gomez", "Santiago Gomez"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
+    "majo-gomez": {
+    displayName: "Majo Gomez",
     allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    invitedGuests: ["Majo Gomez"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "sio-gonzalez": {
+    displayName: "Refu Gomez & Siomara Gonzalez",
+    allowedGuests: 2,
+    invitedGuests: ["Refu Gomez","Siomara Gonzalez"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "yunuen-gonzalez": {
+    displayName: "Roberto & Yunuen Gonzalez",
+    allowedGuests: 3,
+    invitedGuests: ["Roberto Gonzalez","Yunuen Gonzalez", "Atziari Gonzalez"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "ariadna-stamatiades": {
+    displayName: "Ariadna & Nicolas Stamatiades",
+    allowedGuests: 3,
+    invitedGuests: ["Ariadna Stamatiades","Nicolas Stamatiades","Ani Stamatiades"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "caro-paras": {
+    displayName: "Alberto & Carolina Paras",
+    allowedGuests: 2,
+    invitedGuests: ["Alberto Paras","Carolina Paras"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "lili-navarro": {
+    displayName: "Ricardo & Liliana Navarro",
+    allowedGuests: 2,
+    invitedGuests: ["Ricardo Navarro","Liliana Navarro"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "sandy-yeager": {
+    displayName: "Sandy Yeager & Bill Kimmel",
+    allowedGuests: 2,
+    invitedGuests: ["Sandy Yeager","Bill Kimmel"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "nancy-yeager": {
+    displayName: "Nancy Yeager & David Butler",
+    allowedGuests: 2,
+    invitedGuests: ["Nancy Yeager","David Butler"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "keila-ostos": {
+    displayName: "Keila Ostos & Francisco Olea",
+    allowedGuests: 2,
+    invitedGuests: ["Keila Ostos", "Francisco Olea"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "Vale-saraiba": {
+    displayName: "Valeria Saraiba & Santiago Villar",
+    allowedGuests: 2,
+    invitedGuests: ["Valeria Saraiba","Santiago Villar"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    "yoy-armenta": {
+    displayName: "Yoy Armenta & Javi Perez",
+    allowedGuests: 2,
+    invitedGuests: ["Yoy Armenta","Javi Perez"]
   },
-      "ayan-kundi": {
-    displayName: "Ayan Kundi",
-    allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+      "arlette-rodriguez": {
+    displayName: "Roberto & Arlette Rodriguez",
+    allowedGuests: 2,
+    invitedGuests: ["Arlette Rodriguez","Roberto Rodriguez"]
   },
 };
 
