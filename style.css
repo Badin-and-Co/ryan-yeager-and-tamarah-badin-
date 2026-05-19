@@ -1027,7 +1027,7 @@ soft wave movement inside cube
 
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important;
-  column-gap: 18px !important;
+  column-gap: 10px !important;
   align-items: start !important;
   justify-items: center !important;
 }
