@@ -875,48 +875,52 @@ soft wave movement inside cube
 }
 
 */
-/* =========================
-   COUNTDOWN SECTION
-========================= */
+/* CLEAN TEXT COUNTDOWN - WORKS ON PHONE + LAPTOP */
 
-.countdown-section{
+.countdown-section {
   background: transparent !important;
 }
 
-.countdown-wrapper{
-  display:flex;
-  justify-content:center;
-  gap:16px;
-  flex-wrap:wrap;
-  margin-top:35px;
+.countdown-line {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(18px, 5vw, 58px);
+  margin-top: 32px;
+  flex-wrap: nowrap;
 }
 
-.countdown-box{
-  width:92px;
-  height:92px;
-  border-radius:24px;
-  background: rgba(250,246,239,0.75);
-  border:1px solid rgba(157,143,120,0.18);
-  box-shadow:0 12px 30px rgba(75,68,56,0.07);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+.countdown-item {
+  min-width: 70px;
+  text-align: center;
 }
 
-.countdown-box span{
-  font-size:1.9rem;
-  font-family:"Playfair Display", serif;
-  color:var(--deep);
+.countdown-item span {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--deep);
+  line-height: 1;
 }
 
-.countdown-box p{
-  font-size:.68rem;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--taupe);
+.countdown-item p {
+  margin-top: 10px;
+  font-size: clamp(0.62rem, 1.3vw, 0.78rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--taupe);
 }
 
+@media (max-width: 600px) {
+  .countdown-line {
+    gap: 16px;
+  }
+
+  .countdown-item {
+    min-width: 58px;
+  }
+}
   .palette-row span {
   width: 72px !important;
   height: 72px !important;
