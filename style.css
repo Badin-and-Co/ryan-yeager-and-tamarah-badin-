@@ -1014,50 +1014,59 @@ soft wave movement inside cube
   }
 }
 
-
-/* CLEAN TEXT COUNTDOWN - WORKS ON PHONE + LAPTOP */
+/* COUNTDOWN - HORIZONTAL STYLE */
 
 .countdown-section {
   background: transparent !important;
 }
 
 .countdown-line {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: clamp(18px, 5vw, 58px);
-  margin-top: 32px;
-  flex-wrap: nowrap;
+  width: 100% !important;
+  max-width: 760px !important;
+  margin: 60px auto 0 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  column-gap: 35px !important;
+  align-items: start !important;
+  justify-items: center !important;
 }
 
 .countdown-item {
-  min-width: 70px;
-  text-align: center;
+  text-align: center !important;
+  min-width: 0 !important;
 }
 
 .countdown-item span {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 400;
-  color: var(--deep);
-  line-height: 1;
+  display: block !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(3.8rem, 8vw, 6.5rem) !important;
+  font-weight: 400 !important;
+  color: var(--deep) !important;
+  line-height: 0.9 !important;
 }
 
 .countdown-item p {
-  margin-top: 10px;
-  font-size: clamp(0.62rem, 1.3vw, 0.78rem);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--taupe);
+  margin-top: 16px !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: clamp(0.7rem, 1.5vw, 1rem) !important;
+  letter-spacing: 5px !important;
+  text-transform: uppercase !important;
+  color: var(--taupe) !important;
 }
 
 @media (max-width: 600px) {
   .countdown-line {
-    gap: 16px;
+    column-gap: 12px !important;
+    margin-top: 35px !important;
   }
 
-  .countdown-item {
-    min-width: 58px;
+  .countdown-item span {
+    font-size: 2.4rem !important;
+  }
+
+  .countdown-item p {
+    font-size: 0.6rem !important;
+    letter-spacing: 2px !important;
   }
 }
