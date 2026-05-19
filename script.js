@@ -722,21 +722,33 @@ window.addEventListener("load", revealOnScroll);
    COUNTDOWN
 ========================= */
 
+
 function updateCountdown() {
   const weddingDate = new Date("February 7, 2027 00:00:00").getTime();
 
   const daysEl = document.getElementById("days");
   const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
   const secondsEl = document.getElementById("seconds");
 
-  if (!daysEl || !hoursEl || !secondsEl) return;
+  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) return;
 
   const now = new Date().getTime();
   const distance = weddingDate - now;
 
   daysEl.innerHTML = Math.floor(distance / (1000 * 60 * 60 * 24));
-  hoursEl.innerHTML = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  secondsEl.innerHTML = Math.floor((distance % (1000 * 60)) / 1000);
+
+  hoursEl.innerHTML = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+
+  minutesEl.innerHTML = Math.floor(
+    (distance % (1000 * 60 * 60)) / (1000 * 60)
+  );
+
+  secondsEl.innerHTML = Math.floor(
+    (distance % (1000 * 60)) / 1000
+  );
 }
 
 updateCountdown();
