@@ -1121,3 +1121,63 @@ soft wave movement inside cube
 
   box-shadow: 0 10px 30px rgba(75,68,56,0.08);
 }
+
+
+/* PALETTE CUBES - RESPONSIVE */
+.palette-row {
+  display: flex;
+  justify-content: center;
+  gap: clamp(6px, 2vw, 28px);
+  flex-wrap: nowrap;
+}
+
+.palette-row span {
+  width: clamp(42px, 18vw, 96px) !important;
+  height: clamp(42px, 18vw, 96px) !important;
+  border-radius: clamp(10px, 4vw, 28px) !important;
+}
+
+/* REGISTRY CUBES - RESPONSIVE */
+.registry-cubes {
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(8px, 2vw, 18px);
+}
+
+.registry-cube {
+  min-height: auto;
+  padding: clamp(14px, 4vw, 26px) clamp(10px, 3vw, 18px);
+}
+
+.registry-cube h3 {
+  font-size: clamp(1.1rem, 4vw, 1.6rem);
+}
+
+.registry-cube p {
+  font-size: clamp(0.72rem, 3vw, 0.9rem);
+}
+
+/* QR CODE RESPONSIVE */
+.zelle-qr {
+  width: clamp(80px, 28vw, 150px);
+}
+
+/* SMALL PHONES */
+@media (max-width: 430px) {
+  .palette-row {
+    gap: 7px;
+  }
+
+  .palette-row span {
+    width: 54px !important;
+    height: 54px !important;
+    border-radius: 14px !important;
+  }
+
+  .registry-cubes {
+    grid-template-columns: 1fr;
+  }
+
+  .registry-cube {
+    width: 100%;
+  }
+}
