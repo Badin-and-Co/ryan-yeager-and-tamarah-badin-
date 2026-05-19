@@ -353,7 +353,7 @@ body {
   height: 58px;
   border-radius: 50%;
   border: 1px solid rgba(75,68,56,0.1);
-  box-shadow: 0 15px 35px rgba(75,68,56,0.08);
+ /* box-shadow: 0 15px 35px rgba(75,68,56,0.08);*/
 }
 
 .palette-lines {
@@ -377,7 +377,7 @@ body {
   height: 52px;
   border-radius: 8px;
   border: 1px solid rgba(75,68,56,0.15);
-  box-shadow: 0 12px 28px rgba(75,68,56,0.12);
+  /*box-shadow: 0 12px 28px rgba(75,68,56,0.12);*/
   transition: 0.3s ease;
 }
 
