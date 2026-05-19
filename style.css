@@ -960,7 +960,7 @@ soft wave movement inside cube
   border: none !important;
   outline: none !important;
   border-radius: 28px !important;
-  box-shadow: 10px 14px 0 rgba(75,68,56,0.06) !important;
+  box-shadow: none !important;
   transform: none !important;
   isolation: isolate;
 }
