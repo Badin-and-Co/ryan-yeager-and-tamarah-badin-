@@ -1191,7 +1191,7 @@ button {
 }
 
 .palette-note{
-  margin-top: 28px;
+  margin-top: 45px;
   text-align: center;
   font-size: 0.95rem;
   line-height: 1.8;
@@ -1199,6 +1199,4 @@ button {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat', sans-serif;
-  color: var(--muted);
-  line-height: 1.7;
 }
