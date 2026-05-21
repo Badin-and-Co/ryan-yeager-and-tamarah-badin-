@@ -444,8 +444,8 @@ const guests = {
   },
     "martha-ibarrondo": {
     displayName: "Martha Ibarrondo",
-    allowedGuests: 1,
-    invitedGuests: ["Martha Ibarrondo"]
+    allowedGuests: 2,
+    invitedGuests: ["Martha Ibarrondo", "Plus One"]
   },
     "jack-ocampo": {
     displayName: "Jack & Andrea Brindis",
