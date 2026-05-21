@@ -482,7 +482,26 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Cristina Ponce", "Roberto Ponce"]
   },
-  
+    "vic-garcia": {
+    displayName: "Victoria Garcia",
+    allowedGuests: 1,
+    invitedGuests: ["Victoria Garcia"]
+  },
+    "grace-adams": {
+    displayName: "Grace Adams",
+    allowedGuests: 1,
+    invitedGuests: ["Grace Adams"]
+  },
+    "enrique-castaneira": {
+    displayName: "Grace Adams",
+    allowedGuests: 1,
+    invitedGuests: ["Grace Adams"]
+  },
+    "alex-thomas": {
+    displayName: "Alex Thomas",
+    allowedGuests: 1,
+    invitedGuests: ["Alex Thomas"]
+  },
 };
 
 const params = new URLSearchParams(window.location.search);
