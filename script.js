@@ -394,13 +394,13 @@ const guests = {
   },
     "caro-delarosa": {
     displayName: "Caro De La Rosa",
-    allowedGuests: 2,
-    invitedGuests: ["Caro De La Rosa","Plus one"]
+    allowedGuests: 1,
+    invitedGuests: ["Caro De La Rosa"]
   },
     "ilze-castillo": {
     displayName: "Ilze Castillo",
-    allowedGuests: 2,
-    invitedGuests: ["Ilze Castillo", "Plus one"]
+    allowedGuests: 1,
+    invitedGuests: ["Ilze Castillo"]
   },
     "ileana-valle": {
     displayName: "Ileana Valle",
