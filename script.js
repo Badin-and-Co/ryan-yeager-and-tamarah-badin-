@@ -432,10 +432,10 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Jose Antonio Alvarez","Pamela Alvarez"]
   },
-    "mariana-paige": {
-    displayName: "Jonathan & Mariana Paige",
+    "mariana-page": {
+    displayName: "Jonathan & Mariana Page",
     allowedGuests: 2,
-    invitedGuests: ["Mariana Paige", "Jonathan Paige"]
+    invitedGuests: ["Mariana Page", "Jonathan Page"]
   },
     "ale-delacampa": {
     displayName: "Alejandra De La Campa & Billy Zapata",
