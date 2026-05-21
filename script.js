@@ -402,10 +402,10 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Ilze Castillo", "Plus one"]
   },
-    "illiana-valle": {
-    displayName: "Illiana Valle",
+    "ileana-valle": {
+    displayName: "Ileana Valle",
     allowedGuests: 1,
-    invitedGuests: ["Illiana Valle"]
+    invitedGuests: ["Ileana Valle"]
   },
     "christina-ponce": {
     displayName: "Roberto & Christina Ponce",
