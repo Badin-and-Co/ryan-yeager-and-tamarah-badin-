@@ -502,10 +502,10 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Alex Thomas"]
   },
-    "alexander-szabo": {
-    displayName: "Aexander & Dina Szabo",
+    "alex-szabo": {
+    displayName: "Aex & Dina Szabo",
     allowedGuests: 2,
-    invitedGuests: ["Alexander Szabo","Dina Szabo"]
+    invitedGuests: ["Alex Szabo","Dina Szabo"]
   },
     "yadira-vargas": {
     displayName: "Jimbo & Yadira Vargas",
