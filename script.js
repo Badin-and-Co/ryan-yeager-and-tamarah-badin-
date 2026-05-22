@@ -212,10 +212,10 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Zack Herring"]
   },
-    "neal-kotecha": {
-    displayName: "Neal Kotecha",
+    "neel-kotecha": {
+    displayName: "Neel Kotecha",
     allowedGuests: 1,
-    invitedGuests: ["Neal Kotecha"]
+    invitedGuests: ["Neel Kotecha"]
   },
     "dara-kotyczca": {
     displayName: "Dara Kotyczca",
