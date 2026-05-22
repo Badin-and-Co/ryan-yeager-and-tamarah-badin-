@@ -502,6 +502,26 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Alex Thomas"]
   },
+    "alexander-szabo": {
+    displayName: "Aexander & Dina Szabo",
+    allowedGuests: 2,
+    invitedGuests: ["Alexander Szabo","Dina Szabo"]
+  },
+    "yadira-vargas": {
+    displayName: "Jimbo & Yadira Vargas",
+    allowedGuests: 2,
+    invitedGuests: ["Jimbo Vargas", "Yadira Vargas"]
+  },
+    "gibran-hadad": {
+    displayName: "Gibran & Patsy Hadad",
+    allowedGuests: 2,
+    invitedGuests: ["Gibran Hadad", "Patsy Hadad"]
+  },
+    "adriana-ruiz": {
+    displayName: "Jel & Adriana Ruiz",
+    allowedGuests: 2,
+    invitedGuests: ["Joel Ruiz", "Adriana Ruiz"]
+  },
 };
 
 const params = new URLSearchParams(window.location.search);
