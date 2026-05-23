@@ -527,6 +527,12 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Osvaldo Araujo", "Gladys Araujo"]
   },
+    "laura-cherit": {
+    displayName: "Laura Cherit",
+    allowedGuests: 2,
+    invitedGuests: ["Laura Cherit", "Plus One"]
+  },
+  
 };
 
 const params = new URLSearchParams(window.location.search);
