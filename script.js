@@ -537,7 +537,11 @@ const guests = {
     allowedGuests: 1,
     invitedGuests: ["Patricia Szabo"]
   },
-  
+   "aayush": {
+    displayName: "Aayush Gaikwad",
+    allowedGuests: 1,
+    invitedGuests: ["Aayush Gaikwad"]
+  },
 };
 
 const params = new URLSearchParams(window.location.search);
