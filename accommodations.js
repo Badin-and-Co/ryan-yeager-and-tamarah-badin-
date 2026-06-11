@@ -279,3 +279,15 @@ if (window.L) {
     addPointsToMap(travelMap, mapPoints);
   }
 }
+
+const backToInvitation = document.getElementById("backToInvitation");
+
+if (backToInvitation) {
+  backToInvitation.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const currentQuery = window.location.search;
+
+    window.location.href = "index.html" + currentQuery + "#accommodations";
+  });
+}
