@@ -851,3 +851,29 @@ if (registryToggle && registryContent) {
   });
 
 }
+
+const travelPageLink = document.getElementById("travelPageLink");
+
+if (travelPageLink) {
+  travelPageLink.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const currentQuery = window.location.search;
+
+    window.location.href = "accommodations.html" + currentQuery;
+  });
+}
+
+window.addEventListener("load", function () {
+  if (window.location.hash === "#accommodations") {
+    envelopeScreen.classList.add("hidden");
+    invitationPage.classList.remove("hidden");
+
+    setTimeout(() => {
+      document.querySelector("#accommodations")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 300);
+  }
+});
