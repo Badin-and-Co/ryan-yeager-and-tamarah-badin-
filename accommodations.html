@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Guide | Ryan & Tamarah</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="accommodations.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Leaflet map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+
+<body class="travel-body">
+  <main class="travel-background">
+    <div class="travel-card">
+
+      <section class="travel-hero">
+        <a href="index.html" id="backToInvitation" class="back-button">← Back to Invitation</a>
+
+        <p class="section-label">Guest Travel Guide</p>
+        <h1>Traveling From Far Away?</h1>
+
+        <p>
+          We are so grateful you are making the trip. Here are hotel options, drive-time estimates,
+          airport notes, and ideas for what to do around Conroe, The Woodlands / Spring, and Houston.
+        </p>
+
+        <div class="hero-actions">
+          <a class="invitation-button" href="#map-section">Maps</a>
+          <a class="invitation-button" href="#city-guide">City Guide</a>
+          <a class="invitation-button" href="#events">Weekend Events</a>
+        </div>
+      </section>
+
+      <section class="travel-section quick-notes drive-times-section">
+        <p class="section-label">Drive Times</p>
+        <h2>Getting to Iron Manor</h2>
+
+        <div class="drive-time-list" aria-label="Estimated drive times to Iron Manor">
+          <div class="drive-row">
+            <div class="drive-place">
+              <span class="drive-icon">◆</span>
+              <span>Houston Downtown</span>
+            </div>
+            <div class="drive-line"></div>
+            <strong>1 hr 10 min – 1 hr 30 min</strong>
+          </div>
+
+          <div class="drive-row">
+            <div class="drive-place">
+              <span class="drive-icon">◆</span>
+              <span>Spring / The Woodlands</span>
+            </div>
+            <div class="drive-line"></div>
+            <strong>30 – 45 min</strong>
+          </div>
+
+          <div class="drive-row">
+            <div class="drive-place">
+              <span class="drive-icon">◆</span>
+              <span>Conroe</span>
+            </div>
+            <div class="drive-line"></div>
+            <strong>20 – 30 min</strong>
+          </div>
+
+          <div class="drive-row">
+            <div class="drive-place">
+              <span class="drive-icon airport-icon">◆</span>
+              <span>IAH Airport</span>
+            </div>
+            <div class="drive-line"></div>
+            <strong>50 – 65 min</strong>
+          </div>
+        </div>
+
+        <p class="small-note drive-note">
+          Times are estimates without live traffic. Please check your map app before leaving, especially during weekday rush hour.
+        </p>
+      </section>
+
+      <section id="map-section" class="travel-section map-section-first">
+        <p class="section-label">Map</p>
+        <h2>Plan Your Stay</h2>
+
+        <p class="soft-copy travel-copy">
+          Use the maps below to compare the wedding venue location with hotels, airports, and things to do.
+        </p>
+
+        <div class="map-legend" aria-label="Map legend">
+          <span><i class="legend-dot wedding-dot"></i> Red: Wedding Venue</span>
+          <span><i class="legend-dot activity-dot"></i> Blue: Things To Do</span>
+          <span><i class="legend-dot hotel-dot"></i> Green: Hotels</span>
+          <span><i class="legend-dot airport-dot"></i> Brown: Airport</span>
+          <span><i class="legend-dot event-dot"></i> Orange: Weekend Events</span>
+          <span><i class="legend-dot restaurant-dot"></i> Purple: Restaurants</span>
+        </div>
+
+        <div class="map-pair">
+        
+          <div class="map-box">
+            <h3>Hotels, Airport & Things To Do</h3>
+            <p>Red is the wedding venue, blue is things to do, green is hotels, brown is the airport, orange is weekend events, and purple is restaurants.</p>
+            <div id="travelMap" class="travel-map small-map"></div>
+          </div>
+          
+          <div class="map-box">
+            <h3>Wedding Venue Only</h3>
+            <p>Iron Manor is marked in red.</p>
+            <div id="ironOnlyMap" class="travel-map small-map"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="city-guide" class="travel-section city-guide-section">
+        <p class="section-label">Hotels · Experiences · Restaurants</p>
+        <h2>Choose Your Area</h2>
+
+        <p class="soft-copy travel-copy">
+          Select a city first, then choose Hotels, Experiences, or Restaurants to keep everything simple and easy to browse.
+        </p>
+
+        <div id="cityExplorer" class="city-explorer"></div>
+      </section>
+
+      <section id="events" class="travel-section events-section">
+        <p class="section-label">Wedding Weekend Events</p>
+        <h2>Happening During Your Visit</h2>
+
+        <p class="soft-copy travel-copy">
+          If you are arriving early or staying a little longer, these Houston-area events are happening during wedding weekend.
+        </p>
+
+        <div class="special-events">
+          <article class="event-card">
+            <img src="bbq.png" alt="Houston Rodeo Bar-B-Que Contest">
+            <div class="event-content">
+              <span class="place-type">NRG Park · Houston</span>
+              <h3>Houston Rodeo World Championship Bar-B-Que Contest</h3>
+              <p><strong>February 25–27, 2027</strong></p>
+              <p>Kick off rodeo season at NRG Park with barbecue, live music, entertainment, and classic Texas fun.</p>
+              <a class="mini-button" target="_blank" href="https://www.rodeohouston.com/worlds-championship-bar-b-que/">Event Details</a>
+            </div>
+          </article>
+
+          <article class="event-card">
+            <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1200&q=80" alt="The Woodlands Marathon">
+            <div class="event-content">
+              <span class="place-type">Town Green Park · The Woodlands</span>
+              <h3>The Woodlands Marathon</h3>
+              <p><strong>February 27, 2027</strong></p>
+              <p>Take on or cheer at the Boston Marathon-qualifying race beginning at Town Green Park.</p>
+              <a class="mini-button" target="_blank" href="https://www.thewoodlandsmarathon.com/">Event Details</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="event-note">
+          <p>
+            Guests should confirm schedules, ticket availability, and road closures directly with each event before making plans.
+          </p>
+        </div>
+      </section>
+
+      <section class="travel-section closing-travel">
+        <h2>We Cannot Wait To Celebrate With You</h2>
+        <p class="soft-copy">
+          Please plan extra time for traffic and parking. We are so thankful you are making the trip to be with us.
+        </p>
+
+        <a href="index.html" id="bottomBackToInvitation" class="invitation-button">Back to Invitation</a>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="accommodations.js"></script>
+</body>
+</html>
