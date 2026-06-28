@@ -18,27 +18,26 @@ const cityGuide = [
         name: "Holiday Inn Express & Suites Conroe I-45 North by IHG",
         image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80",
         summary: "A simple, convenient hotel option in Conroe with breakfast-style comfort and easy highway access for wedding weekend plans.",
-        website: "https://www.ihg.com/holidayinnexpress/hotels/us/en/conroe/cxonc/hoteldetail",
+        website: "https://www.ihg.com/holidayinnexpress/hotels/us/en/conroe/cxotx/hoteldetail",
         map: "https://www.google.com/maps/search/?api=1&query=Holiday+Inn+Express+%26+Suites+Conroe+I-45+North"
       },
       {
         name: "Hyatt Regency Conroe",
         image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80",
         summary: "A polished full-service stay in Grand Central Park, great for guests wanting a newer hotel feel near Conroe.",
-        website: "https://www.hyatt.com/hyatt-regency/en-US/iahmc-hyatt-regency-conroe",
+        website: "https://www.hyatt.com/hyatt-regency/en-US/iahrc-hyatt-regency-conroe",
         map: "https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Conroe+1001+Grand+Central+Parkway"
       }
     ],
     experiences: [
       { name: "Lake Conroe", image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80", summary: "A relaxed lake area for pretty views, boat time, waterfront dining, and a peaceful break before or after the wedding.", website: "https://www.visitconroe.com/things-to-do/lake-conroe/", map: "https://www.google.com/maps/search/?api=1&query=Lake+Conroe+Texas" },
-      { name: "Historic Downtown Conroe", image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80", summary: "A walkable downtown area with local restaurants, shops, murals, and a charming small-town Texas feel.", website: "https://www.visitconroe.com/things-to-do/downtown-conroe/", map: "https://www.google.com/maps/search/?api=1&query=Historic+Downtown+Conroe" },
+      { name: "Historic Downtown Conroe", image: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=80", summary: "A walkable downtown area with local restaurants, shops, murals, and a charming small-town Texas feel.", website: "https://www.visitconroe.com/things-to-do/attractions/downtown-conroe/", map: "https://www.google.com/maps/search/?api=1&query=Historic+Downtown+Conroe" },
       { name: "7 Acre Wood", image: "https://images.unsplash.com/photo-1503919005314-30d93d07d823?auto=format&fit=crop&w=900&q=80", summary: "A casual family-friendly stop with animals, play areas, and easy outdoor activities for guests traveling with kids.", website: "https://7acrewood.org/", map: "https://www.google.com/maps/search/?api=1&query=7+Acre+Wood+Conroe+TX" },
-      { name: "Heritage Museum of Montgomery County", image: "heritage.png", summary: "A small local museum sharing Montgomery County history, perfect for a calm and quick daytime visit.", website: "https://www.heritagemuseum.us/", map: "https://www.google.com/maps/search/?api=1&query=Heritage+Museum+of+Montgomery+County" },
-      { name: "B-52 Brewing Co.", image: "https://images.unsplash.com/photo-1532635241-17e820acc59f?auto=format&fit=crop&w=900&q=80", summary: "A laid-back brewery with outdoor seating, craft beer, and an easygoing local atmosphere.", website: "https://www.b52brewing.com/", map: "https://www.google.com/maps/search/?api=1&query=B-52+Brewing+Conroe+TX" }
+      { name: "Heritage Museum of Montgomery County", image: "heritage.png", summary: "A small local museum sharing Montgomery County history, perfect for a calm and quick daytime visit.", website: "https://www.heritagemuseum.us/", map: "https://www.google.com/maps/search/?api=1&query=Heritage+Museum+of+Montgomery+County" }
     ],
     restaurants: [
       { name: "Amore Fine Dining & Spirits", image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80", summary: "An elegant dinner option near Lake Conroe with a romantic atmosphere and Italian-inspired dishes.", website: "https://www.amorefinedining.com/", map: "https://www.google.com/maps/search/?api=1&query=Amore+Fine+Dining+%26+Spirits+Montgomery+TX" },
-      { name: "Walden Yacht Club", image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80", summary: "A waterfront-style dining spot with lake views, great for guests who want a more scenic meal.", website: "https://www.waldenyachtclub.com/", map: "https://www.google.com/maps/search/?api=1&query=Walden+Yacht+Club+Montgomery+TX" },
+      { name: "Walden Yacht Club", image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80", summary: "A waterfront-style dining spot with lake views, great for guests who want a more scenic meal.", website: "https://www.eventective.com/montgomery-tx/walden-yacht-club-on-lake-conroe-726943.html", map: "https://www.google.com/maps/search/?api=1&query=Walden+Yacht+Club+Montgomery+TX" },
       { name: "Red Brick Tavern", image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80", summary: "A downtown Conroe favorite for comfort food, live music energy, and a casual Texas night out.", website: "https://redbricktavern.com/", map: "https://www.google.com/maps/search/?api=1&query=Red+Brick+Tavern+Conroe+TX" },
       { name: "Pacific Yard House", image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80", summary: "A lively restaurant in downtown Conroe with American dishes, drinks, and a fun group-friendly setting.", website: "https://www.pacificyardhouse.com/", map: "https://www.google.com/maps/search/?api=1&query=Pacific+Yard+House+Conroe+TX" }
     ]
@@ -59,12 +58,12 @@ const cityGuide = [
         name: "Hampton Inn & Suites by Hilton Shenandoah The Woodlands",
         image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80",
         summary: "A practical and comfortable stay near The Woodlands, good for guests wanting value and easy access.",
-        website: "https://www.hilton.com/en/hotels/houtwhx-hampton-suites-shenandoah-the-woodlands/",
+        website: "https://www.hilton.com/en/locations/usa/texas/the-woodlands/hampton-by-hilton/?WT.mc_id=zlada0ww1hx2psh3ggl4advbpp5dkt6multibr7_153665317_1003528&gclsrc=aw.ds&gad_source=1&gad_campaignid=686964172&gbraid=0AAAAADQ3sJ09npwB_03yz8op8N-DhBQVX&gclid=CjwKCAjw6f3RBhApEiwAMaCqWQ_NeKoSPGduZD9db9ts3Shm44lhbUHBbEZnrYfwE7dPuZaeEbaY7hoCqVUQAvD_BwE",
         map: "https://www.google.com/maps/search/?api=1&query=Hampton+Inn+%26+Suites+by+Hilton+Shenandoah+The+Woodlands"
       }
     ],
     experiences: [
-      { name: "The Woodlands Waterway", image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80", summary: "A pretty walking area with water views, restaurants, patios, and an easy place to explore without overplanning.", website: "https://www.visitthewoodlands.com/things-to-do/waterway/", map: "https://www.google.com/maps/search/?api=1&query=The+Woodlands+Waterway" },
+      { name: "The Woodlands Waterway", image: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80", summary: "A pretty walking area with water views, restaurants, patios, and an easy place to explore without overplanning.", website: "https://www.visitthewoodlands.com/things-to-do/outdoors-and-recreation/the-waterway/", map: "https://www.google.com/maps/search/?api=1&query=The+Woodlands+Waterway" },
       { name: "Market Street The Woodlands", image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80", summary: "An outdoor shopping and dining area with boutiques, restaurants, coffee spots, and a polished town-center feel.", website: "https://shopatmarketstreet.com/", map: "https://www.google.com/maps/search/?api=1&query=Market+Street+The+Woodlands" },
       { name: "The Woodlands Mall", image: "https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?auto=format&fit=crop&w=900&q=80", summary: "A convenient indoor mall for shopping, quick meals, and last-minute wedding weekend essentials.", website: "https://www.thewoodlandsmall.com/", map: "https://www.google.com/maps/search/?api=1&query=The+Woodlands+Mall" },
       { name: "Cynthia Woods Mitchell Pavilion", image: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80", summary: "A well-known outdoor concert venue; guests can check the schedule for shows during their stay.", website: "https://www.woodlandscenter.org/", map: "https://www.google.com/maps/search/?api=1&query=Cynthia+Woods+Mitchell+Pavilion" },
@@ -86,7 +85,7 @@ const cityGuide = [
         name: "Hyatt Regency Houston Downtown",
         image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80",
         summary: "A downtown hotel option close to city restaurants, theaters, and Houston sightseeing before or after the wedding.",
-        website: "https://www.hyatt.com/hyatt-regency/en-US/houston-hyatt-regency-houston",
+        website: "https://www.hyatt.com/hyatt-regency/en-US/hourh-hyatt-regency-houston-downtownn",
         map: "https://www.google.com/maps/search/?api=1&query=Hyatt+Regency+Houston+Downtown+1200+Louisiana+Street"
       },
       {
