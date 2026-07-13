@@ -233,9 +233,9 @@ const guests = {
     invitedGuests: ["Joe Visy","Jean Visy"]
   },
     "ayan-kundi": {
-    displayName: "Ayan Kundi",
+    displayName: "Ayaan Kundi",
     allowedGuests: 1,
-    invitedGuests: ["Ayan Kundi"]
+    invitedGuests: ["Ayaan Kundi"]
   },
     "david-tauber": {
     displayName: "David Tauber",
@@ -551,6 +551,11 @@ const guests = {
     displayName: "Jouss Carvajal",
     allowedGuests: 2,
     invitedGuests: ["Jouss Carvajal", "Plus One"]
+  },
+    "ana-laura": {
+    displayName: "Ana Laura & Gustav Juul",
+    allowedGuests: 2,
+    invitedGuests: ["Ana Laura Juul", "Gistav Juul"]
   },
     "James": {
     displayName: "James Masciola",
