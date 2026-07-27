@@ -192,7 +192,7 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Randy Henderson", "Kim Henderson"]
   },
-    "janis-burke": {
+    "janis-burkle": {
     displayName: "Peter & Janis Burke",
     allowedGuests: 2,
     invitedGuests: ["Peter Burke","Janis Burke"]
