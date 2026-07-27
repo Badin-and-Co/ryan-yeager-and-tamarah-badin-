@@ -139,7 +139,7 @@ const guests = {
   },  
     "gerardo-badin": {
     displayName: "Gerardo & Monica Badin",
-    allowedGuests: 1,
+    allowedGuests: 2,
     invitedGuests: ["Gerardo Badin", "Monica Badin"]
   },
     "anuar-badin": {
