@@ -94,8 +94,8 @@ const guests = {
   },
     "jorge-sucar": {
     displayName: "Jorge Sucar & Yesi Briceño",
-    allowedGuests: 2,
-    invitedGuests: ["Jorge Sucar", "Yesi Briceño"]
+    allowedGuests: 3,
+    invitedGuests: ["Jorge Sucar", "Yesi Briceño", "Natalia Sucar"]
   },
     "emil-sucar": {
     displayName: "Emil Sucar & Fer Llera",
@@ -567,6 +567,7 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Jesus Aranda", "Plus One"]
   },
+  
 };
 
 const params = new URLSearchParams(window.location.search);
