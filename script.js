@@ -567,6 +567,11 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Jesus Aranda", "Plus One"]
   },
+    "javi-arena": {
+    displayName: "Javi Arena",
+    allowedGuests: 2,
+    invitedGuests: ["Javi Arena", "Plus One"]
+  },
   
 };
 
