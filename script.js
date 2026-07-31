@@ -268,9 +268,9 @@ const guests = {
     invitedGuests: ["Mat Laurent"]
   },
     "jan-laurent": {
-    displayName: "Jan & Adalina Laurent",
+    displayName: "Jan & Adamary Laurent",
     allowedGuests: 2,
-    invitedGuests: ["Jan Laurent","Adalina Laurent"]
+    invitedGuests: ["Jan Laurent","Adamary Laurent"]
   },
     "cuco-gomez": {
     displayName: "Cuco & Lupita Gomez",
