@@ -548,9 +548,9 @@ const guests = {
     invitedGuests: ["Rosita Morales", "Ruben Morales"]
   },
    "jouss": {
-    displayName: "Jouss Carvajal",
+    displayName: "Jouss Carbajal",
     allowedGuests: 2,
-    invitedGuests: ["Jouss Carvajal", "Plus One"]
+    invitedGuests: ["Jouss Carbajal", "Plus One"]
   },
     "ana-laura": {
     displayName: "Ana Laura & Gustav Juul",
@@ -562,10 +562,10 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["James Masciola", "Plus One"]
   },
-     "jesus-aranda": {
-    displayName: "Jesus Aranda",
+     "Will-Marret": {
+    displayName: "Will Marret",
     allowedGuests: 2,
-    invitedGuests: ["Jesus Aranda", "Plus One"]
+    invitedGuests: ["Will Marret", "Plus One"]
   },
     "javi-arena": {
     displayName: "Javi Arena",
