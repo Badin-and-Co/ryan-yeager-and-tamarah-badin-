@@ -550,7 +550,7 @@ const guests = {
    "jouss": {
     displayName: "Jouss Carbajal",
     allowedGuests: 2,
-    invitedGuests: ["Jouss Carbajal", "Plus One"]
+    invitedGuests: ["Jouss Carbajal", "Alejandro Langarica"]
   },
     "ana-laura": {
     displayName: "Ana Laura & Gustav Juul",
