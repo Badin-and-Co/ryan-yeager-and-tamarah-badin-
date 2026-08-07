@@ -563,9 +563,9 @@ const guests = {
     invitedGuests: ["James Masciola", "Plus One"]
   },
      "Will-Marret": {
-    displayName: "Will Marrett",
+    displayName: "Will Marett",
     allowedGuests: 2,
-    invitedGuests: ["Will Marrett", "Plus One"]
+    invitedGuests: ["Will Marett", "Plus One"]
   },
     "javi-arena": {
     displayName: "Javi Arena",
