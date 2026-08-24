@@ -389,8 +389,8 @@ const guests = {
   },
     "santiago-aguero": {
     displayName: "Santiago Agüero",
-    allowedGuests: 2,
-    invitedGuests: ["Santiago Agüero","Plus one"]
+    allowedGuests: 1,
+    invitedGuests: ["Santiago Agüero"]
   },
     "caro-delarosa": {
     displayName: "Caro De La Rosa",
