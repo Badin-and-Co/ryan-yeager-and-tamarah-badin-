@@ -217,52 +217,68 @@
 		-->
 
       <!-- RSVP -->
-      <section id="rsvp" class="invitation-section reveal rsvp-section">
-        <p class="section-label">RSVP</p>
-        <h2>Kindly Respond</h2>
-        <div class="guest-name-box">
-          <p id="guestName">...</p>
-          <span id="guestLimitText">...</span>
-        </div>
-		<p class="soft-copy">
-          We kindly ask that you send the RSVP once
-        </p>
+  <section id="rsvp" class="invitation-section reveal rsvp-section">
 
-        <form id="rsvpForm" action="https://formspree.io/f/xojrdedq" method="POST">
-          <input type="hidden" name="guestCode" id="guestCodeInput">
-          <input type="hidden" name="mainGuest" id="mainGuestInput">
-          <input type="hidden" name="extraGuests" id="extraGuestsInput">
+  <!-- STATUS MESSAGE -->
+  <div id="rsvpStatusDisplay" class="hidden"></div>
 
-          <label>Main Guest</label>
-          <input type="text" id="nameInput" name="displayedMainGuest" readonly>
+  <!-- NORMAL RSVP CONTENT -->
+  <div id="rsvpFormContent">
 
-          <label>Will you attend?</label>
-          <select id="attendance" name="attendance" required>
-            <option value="">Select one</option>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
+    <p class="section-label">RSVP</p>
+    <h2>Kindly Respond</h2>
 
-          <div id="yesOptions" class="hidden">
-            <label>Confirming For</label>
-            <select id="guestCount" name="guestCount"></select>
+    <div class="guest-name-box">
+      <p id="guestName">...</p>
+      <span id="guestLimitText">...</span>
+    </div>
 
-            <label>Main Guest Meal</label>
-            <select id="meal" name="mainGuestMeal">
-              <option value="">Select meal</option>
-              <option value="Carnivore">Carnivore</option>
-              <option value="Vegetarian">Vegetarian</option>
-            </select>
+    <p class="soft-copy">
+      We kindly ask that you send the RSVP once
+    </p>
 
-            <div id="extraGuestsBox"></div>
-          </div>
+    <form id="rsvpForm" action="https://formspree.io/f/xojrdedq" method="POST">
 
-          <label>Notes</label>
-          <textarea id="notes" name="notes" placeholder="Write anything here..."></textarea>
+      <input type="hidden" name="guestCode" id="guestCodeInput">
+      <input type="hidden" name="mainGuest" id="mainGuestInput">
+      <input type="hidden" name="extraGuests" id="extraGuestsInput">
 
-          <button type="submit">Send RSVP</button>
-        </form>
-      </section>
+      <label>Main Guest</label>
+      <input type="text" id="nameInput" name="displayedMainGuest" readonly>
+
+      <label>Will you attend?</label>
+      <select id="attendance" name="attendance" required>
+        <option value="">Select one</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <div id="yesOptions" class="hidden">
+
+        <label>Confirming For</label>
+        <select id="guestCount" name="guestCount"></select>
+
+        <label>Main Guest Meal</label>
+        <select id="meal" name="mainGuestMeal">
+          <option value="">Select meal</option>
+          <option value="Carnivore">Carnivore</option>
+          <option value="Vegetarian">Vegetarian</option>
+        </select>
+
+        <div id="extraGuestsBox"></div>
+
+      </div>
+
+      <label>Notes</label>
+      <textarea id="notes" name="notes" placeholder="Write anything here..."></textarea>
+
+      <button type="submit">Send RSVP</button>
+
+    </form>
+
+  </div>
+
+</section>
       <!--
        
       <section id="photos" class="invitation-section reveal">     PHOTO BAND
@@ -291,7 +307,7 @@
         </div>
       </section>
      -->
-    </div>
+	</div>
   </main>
 
   <script src="script.js"></script>
