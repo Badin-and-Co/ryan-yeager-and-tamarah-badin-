@@ -1,578 +1,1090 @@
 const guests = {
+
   "kay-kelly": {
     displayName: "Jeff & Kay Kelly",
     allowedGuests: 2,
-    invitedGuests: ["Jeff Kelly", "Kay Kelly"]
+    invitedGuests: ["Jeff Kelly", "Kay Kelly"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jeff Kelly", meal: "Carnivore" },
+      { name: "Kay Kelly", meal: "Carnivore" }
+    ]
   },
 
   "nicole-yeager": {
     displayName: "Nicole Yeager",
     allowedGuests: 1,
-    invitedGuests: ["Nicole Yeager"]
+    invitedGuests: ["Nicole Yeager"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Nicole Yeager", meal: "Carnivore" }
+    ]
   },
 
   "stephen-yeager": {
     displayName: "Stephen Yeager",
     allowedGuests: 1,
-    invitedGuests: ["Stephen Yeager"]
+    invitedGuests: ["Stephen Yeager"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Stephen Yeager", meal: "Carnivore" }
+    ]
   },
 
   "david-yeager": {
     displayName: "David Yeager",
     allowedGuests: 1,
-    invitedGuests: ["David Yeager"]
+    invitedGuests: ["David Yeager"],
+    status: 1,
+    confirmedGuests: [
+      { name: "David Yeager", meal: "Carnivore" }
+    ]
   },
 
   "austin-kelly": {
     displayName: "Austin & Ashley Kelly",
     allowedGuests: 2,
-    invitedGuests: ["Austin Kelly", "Ashley Kelly"]
+    invitedGuests: ["Austin Kelly", "Ashley Kelly"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Austin Kelly", meal: "Carnivore" },
+      { name: "Ashley Kelly", meal: "Carnivore" }
+    ]
   },
 
   "andrew-kelly": {
     displayName: "Andrew Kelly",
     allowedGuests: 1,
-    invitedGuests: ["Andrew Kelly"]
+    invitedGuests: ["Andrew Kelly"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Andrew Kelly", meal: "Carnivore" }
+    ]
   },
 
   "josh-kelly": {
     displayName: "Joshua Kelly & Abby Scheller",
     allowedGuests: 2,
-    invitedGuests: ["Joshua Kelly", "Abby Scheller"]
+    invitedGuests: ["Joshua Kelly", "Abby Scheller"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Joshua Kelly", meal: "Carnivore" },
+      { name: "Abby Scheller", meal: "Carnivore" }
+    ]
   },
 
   "will-kelly": {
     displayName: "Will & Stefani Kelly",
     allowedGuests: 2,
-    invitedGuests: ["Will Kelly", "Stefani Kelly"]
+    invitedGuests: ["Will Kelly", "Stefani Kelly"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Will Kelly", meal: "Carnivore" },
+      { name: "Stefani Kelly", meal: "Carnivore" }
+    ]
   },
 
   "patricia-badin": {
     displayName: "Omar & Patricia Badin",
     allowedGuests: 2,
-    invitedGuests: ["Omar Badin", "Patricia Badin"]
+    invitedGuests: ["Omar Badin", "Patricia Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Omar Badin", meal: "Carnivore" },
+      { name: "Patricia Badin", meal: "Carnivore" }
+    ]
   },
+
   "samantha-szabo": {
     displayName: "Andrei & Samantha Szabo",
     allowedGuests: 2,
-    invitedGuests: ["Andrei Szabo", "Samantha Szabo"]
+    invitedGuests: ["Andrei Szabo", "Samantha Szabo"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Andrei Szabo", meal: "Carnivore" },
+      { name: "Samantha Szabo", meal: "Carnivore" }
+    ]
   },
+
   "omar-badin": {
     displayName: "Omar Badin Arenas",
     allowedGuests: 1,
-    invitedGuests: ["Omar Badin Arenas"]
+    invitedGuests: ["Omar Badin Arenas"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Omar Badin Arenas", meal: "Carnivore" }
+    ]
   },
-    "rosy-badin": {
+
+  "rosy-badin": {
     displayName: "Rosy Badin",
     allowedGuests: 1,
-    invitedGuests: ["Rosy Badin"]
+    invitedGuests: ["Rosy Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Rosy Badin", meal: "Carnivore" }
+    ]
   },
-    "rosy-cherit": {
+
+  "rosy-cherit": {
     displayName: "Rosy Cherit",
     allowedGuests: 1,
-    invitedGuests: ["Rosy Cherit"]
+    invitedGuests: ["Rosy Cherit"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Rosy Cherit", meal: "Carnivore" }
+    ]
   },
-    "andrea-fautsch": {
+
+  "andrea-fautsch": {
     displayName: "Andrea Fautsch & Fer Jaime",
     allowedGuests: 2,
-    invitedGuests: ["Andrea Fautsch", "Fer Jaime"]
+    invitedGuests: ["Andrea Fautsch", "Fer Jaime"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Andrea Fautsch", meal: "Carnivore" },
+      { name: "Fer Jaime", meal: "Carnivore" }
+    ]
   },
-    "iker-fautsch": {
+
+  "iker-fautsch": {
     displayName: "Iker Fautsch",
     allowedGuests: 1,
-    invitedGuests: ["Iker Fautsch"]
+    invitedGuests: ["Iker Fautsch"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Iker Fautsch", meal: "Carnivore" }
+    ]
   },
-    "pato-fautsch": {
+
+  "pato-fautsch": {
     displayName: "Pato Fautsch",
     allowedGuests: 1,
-    invitedGuests: ["Pato Fautsch"]
+    invitedGuests: ["Pato Fautsch"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Pato Fautsch", meal: "Carnivore" }
+    ]
   },
-    "coco-badin": {
+
+  "coco-badin": {
     displayName: "Coco Badin",
     allowedGuests: 1,
-    invitedGuests: ["Coco Badin"]
+    invitedGuests: ["Coco Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Coco Badin", meal: "Carnivore" }
+    ]
   },
-    "jorge-sucar": {
+
+  "jorge-sucar": {
     displayName: "Jorge Sucar & Yesi Briceño",
     allowedGuests: 3,
-    invitedGuests: ["Jorge Sucar", "Yesi Briceño", "Natalia Sucar"]
+    invitedGuests: ["Jorge Sucar", "Yesi Briceño", "Natalia Sucar"],
+    status: 0
   },
-    "emil-sucar": {
+
+  "emil-sucar": {
     displayName: "Emil Sucar & Fer Llera",
     allowedGuests: 2,
-    invitedGuests: ["Emil Sucar", "Fer Llera"]
+    invitedGuests: ["Emil Sucar", "Fer Llera"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Emil Sucar", meal: "Carnivore" },
+      { name: "Fer Llera", meal: "Carnivore" }
+    ]
   },
-    "dani-sucar": {
+
+  "dani-sucar": {
     displayName: "Daniella Sucar",
     allowedGuests: 1,
-    invitedGuests: ["Daniella Sucar"]
+    invitedGuests: ["Daniella Sucar"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Daniella Sucar", meal: "Carnivore" }
+    ]
   },
-    "jesus-badin": {
+
+  "jesus-badin": {
     displayName: "Jesus Badin",
     allowedGuests: 1,
-    invitedGuests: ["Jesus Badin"]
+    invitedGuests: ["Jesus Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jesus Badin", meal: "Carnivore" }
+    ]
   },
-    "renata-badin": {
+
+  "renata-badin": {
     displayName: "Renata Badin",
     allowedGuests: 1,
-    invitedGuests: ["Renata Badin"]
+    invitedGuests: ["Renata Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Renata Badin", meal: "Carnivore" }
+    ]
   },
-    "regina-badin": {
+
+  "regina-badin": {
     displayName: "Regina Badin & Anuar Abugaber",
     allowedGuests: 2,
-    invitedGuests: ["Regina Badin", "Anuar Abugaber"]
+    invitedGuests: ["Regina Badin", "Anuar Abugaber"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Regina Badin", meal: "Carnivore" },
+      { name: "Anuar Abugaber", meal: "Carnivore" }
+    ]
   },
-    "blanca-ramirez": {
+
+  "blanca-ramirez": {
     displayName: "Blanca Ramirez",
     allowedGuests: 1,
-    invitedGuests: ["Blanca Ramirez"]
+    invitedGuests: ["Blanca Ramirez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Blanca Ramirez", meal: "Carnivore" }
+    ]
   },
-    "alejandra-arenas": {
+
+  "alejandra-arenas": {
     displayName: "Alejandra Arenas & Alejandro Ramirez",
     allowedGuests: 4,
-    invitedGuests: ["Alejandra Arenas","Alejandro Ramirez","Camila Ramirez", "Zoe Ramirez"]
+    invitedGuests: ["Alejandra Arenas", "Alejandro Ramirez", "Camila Ramirez", "Zoe Ramirez"],
+    status: 0
   },
-    "gerardo-arenas": {
+
+  "gerardo-arenas": {
     displayName: "Gerardo Arenas & Greta Albarran",
     allowedGuests: 3,
-    invitedGuests: ["Gerardo Arenas","Greta Albarran", "Paulina Arenas"]
-  },  
-    "gerardo-badin": {
+    invitedGuests: ["Gerardo Arenas", "Greta Albarran", "Paulina Arenas"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Gerardo Arenas", meal: "Carnivore" },
+      { name: "Greta Albarran", meal: "Carnivore" },
+      { name: "Paulina Arenas", meal: "Carnivore" }
+    ]
+  },
+
+  "gerardo-badin": {
     displayName: "Gerardo & Monica Badin",
     allowedGuests: 2,
-    invitedGuests: ["Gerardo Badin", "Monica Badin"]
+    invitedGuests: ["Gerardo Badin", "Monica Badin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Gerardo Badin", meal: "Carnivore" },
+      { name: "Monica Badin", meal: "Carnivore" }
+    ]
   },
-    "anuar-badin": {
+
+  "anuar-badin": {
     displayName: "Anuar Badin & Alejandra Lepe",
     allowedGuests: 2,
-    invitedGuests: ["Anuar Badin", "Alejandra Lepe"]
+    invitedGuests: ["Anuar Badin", "Alejandra Lepe"],
+    status: 0
   },
-    "marcela-arechandieta": {
+
+  "marcela-arechandieta": {
     displayName: "Marcela Arechandieta",
     allowedGuests: 1,
-    invitedGuests: ["Marcela Arechandieta"]
+    invitedGuests: ["Marcela Arechandieta"],
+    status: 0
   },
-    "nicolas-badin": {
+
+  "nicolas-badin": {
     displayName: "Nicolas Badin",
     allowedGuests: 1,
-    invitedGuests: ["Nicolas Badin"]
+    invitedGuests: ["Nicolas Badin"],
+    status: 2
   },
-    "nasta-said": {
+
+  "nasta-said": {
     displayName: "Nasta & Pablo Said",
     allowedGuests: 2,
-    invitedGuests: ["Nasta Said", "Pablo Said"]
+    invitedGuests: ["Nasta Said", "Pablo Said"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Nasta Said", meal: "Carnivore" },
+      { name: "Pablo Said", meal: "Carnivore" }
+    ]
   },
-    "olga-badin": {
+
+  "olga-badin": {
     displayName: "Olga & Anuar Badin",
     allowedGuests: 2,
-    invitedGuests: ["Olga Badin", "Anuar Badin"]
+    invitedGuests: ["Olga Badin", "Anuar Badin"],
+    status: 2
   },
-    "jessica-said": {
+
+  "jessica-said": {
     displayName: "Jessica Said & Gerardo Carvajal",
     allowedGuests: 2,
-    invitedGuests: ["Jessica Said", "Gerardo Carvajal"]
+    invitedGuests: ["Jessica Said", "Gerardo Carvajal"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jessica Said", meal: "Carnivore" },
+      { name: "Gerardo Carvajal", meal: "Carnivore" }
+    ]
   },
-    "michael-melugin": {
+
+  "michael-melugin": {
     displayName: "Michael & Deb Melugin",
     allowedGuests: 2,
-    invitedGuests: ["Michael Melugin", "Deb Melugin"]
+    invitedGuests: ["Michael Melugin", "Deb Melugin"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Michael Melugin", meal: "Carnivore" },
+      { name: "Deb Melugin", meal: "Carnivore" }
+    ]
   },
-    "rick-crider": {
+
+  "rick-crider": {
     displayName: "Rick & Joyce Crider",
     allowedGuests: 2,
-    invitedGuests: ["Rick Crider", "Joyce Crider"]
+    invitedGuests: ["Rick Crider", "Joyce Crider"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Rick Crider", meal: "Carnivore" },
+      { name: "Joyce Crider", meal: "Carnivore" }
+    ]
   },
-    "andrea-hornbeak": {
+
+  "andrea-hornbeak": {
     displayName: "Andrea & Darren Hornbeak",
     allowedGuests: 2,
-    invitedGuests: ["Andrea Hornbeak", "Darren Hornbeak"]
+    invitedGuests: ["Andrea Hornbeak", "Darren Hornbeak"],
+    status: 2
   },
-    "kim-henderson": {
+
+  "kim-henderson": {
     displayName: "Randy & Kim Henderson",
     allowedGuests: 2,
-    invitedGuests: ["Randy Henderson", "Kim Henderson"]
+    invitedGuests: ["Randy Henderson", "Kim Henderson"],
+    status: 0
   },
-    "janis-burke": {
+
+  "janis-burke": {
     displayName: "Peter & Janis Burke",
     allowedGuests: 2,
-    invitedGuests: ["Peter Burke","Janis Burke"]
+    invitedGuests: ["Peter Burke", "Janis Burke"],
+    status: 0
   },
-    "greg-eversole": {
+
+  "greg-eversole": {
     displayName: "Greg & Susan Eversole",
     allowedGuests: 2,
-    invitedGuests: ["Greg Eversole", "Susan Eversole"]
+    invitedGuests: ["Greg Eversole", "Susan Eversole"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Greg Eversole", meal: "Carnivore" },
+      { name: "Susan Eversole", meal: "Carnivore" }
+    ]
   },
-    "blake-buttles": {
+
+  "blake-buttles": {
     displayName: "Blake Buttles",
     allowedGuests: 1,
-    invitedGuests: ["Blake Buttles"]
+    invitedGuests: ["Blake Buttles"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Blake Buttles", meal: "Carnivore" }
+    ]
   },
-    "zack-herring": {
+
+  "zack-herring": {
     displayName: "Zack Herring",
     allowedGuests: 1,
-    invitedGuests: ["Zack Herring"]
+    invitedGuests: ["Zack Herring"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Zack Herring", meal: "Carnivore" }
+    ]
   },
-    "neel-kotecha": {
+
+  "neel-kotecha": {
     displayName: "Neel Kotecha",
     allowedGuests: 1,
-    invitedGuests: ["Neel Kotecha"]
+    invitedGuests: ["Neel Kotecha"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Neel Kotecha", meal: "Vegan" }
+    ]
   },
-    "dara-kotyczca": {
+
+  "dara-kotyczca": {
     displayName: "Dara Kotyczca",
     allowedGuests: 1,
-    invitedGuests: ["Dara Kotyczca"]
+    invitedGuests: ["Dara Kotyczca"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Dara Kotyczca", meal: "Carnivore" }
+    ]
   },
-    "pam-salley": {
+
+  "pam-salley": {
     displayName: "Joe & Pam Salley",
     allowedGuests: 2,
-    invitedGuests: ["Joe Salley", "Pam Salley"]
+    invitedGuests: ["Joe Salley", "Pam Salley"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Joe Salley", meal: "Carnivore" },
+      { name: "Pam Salley", meal: "Carnivore" }
+    ]
   },
-    "joe-visy": {
+
+  "joe-visy": {
     displayName: "Joe & Jean Visy",
     allowedGuests: 2,
-    invitedGuests: ["Joe Visy","Jean Visy"]
+    invitedGuests: ["Joe Visy", "Jean Visy"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Joe Visy", meal: "Carnivore" },
+      { name: "Jean Visy", meal: "Carnivore" }
+    ]
   },
-    "ayan-kundi": {
+
+  "ayan-kundi": {
     displayName: "Ayaan Kundi",
     allowedGuests: 1,
-    invitedGuests: ["Ayaan Kundi"]
+    invitedGuests: ["Ayaan Kundi"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Ayaan Kundi", meal: "Carnivore" }
+    ]
   },
-    "david-tauber": {
+
+  "david-tauber": {
     displayName: "David Tauber",
     allowedGuests: 2,
-    invitedGuests: ["David Tauber","Plus one"]
+    invitedGuests: ["David Tauber", "Plus one"],
+    status: 0
   },
-    "abraham-seman": {
+
+  "abraham-seman": {
     displayName: "Abraham Seman & Franchesca Karam",
     allowedGuests: 2,
-    invitedGuests: ["Abraham Seman","Franchesca Karam"]
+    invitedGuests: ["Abraham Seman", "Franchesca Karam"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Abraham Seman", meal: "Carnivore" },
+      { name: "Franchesca Karam", meal: "Carnivore" }
+    ]
   },
-    "michelle-farias": {
+
+  "michelle-farias": {
     displayName: "Daniel Schnoor & Michelle Farias",
     allowedGuests: 2,
-    invitedGuests: ["Daniel Schnoor","Michelle Farias"]
+    invitedGuests: ["Daniel Schnoor", "Michelle Farias"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Daniel Schnoor", meal: "Carnivore" },
+      { name: "Michelle Farias", meal: "Carnivore" }
+    ]
   },
-    "lore-laurent": {
+
+  "lore-laurent": {
     displayName: "Marco & Lore Laurent",
     allowedGuests: 2,
-    invitedGuests: ["Marco Laurent", "Lore Laurent"]
+    invitedGuests: ["Marco Laurent", "Lore Laurent"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Marco Laurent", meal: "Carnivore" },
+      { name: "Lore Laurent", meal: "Carnivore" }
+    ]
   },
-    "denisse-laurent": {
+
+  "denisse-laurent": {
     displayName: "Denisse Laurent",
     allowedGuests: 1,
-    invitedGuests: ["Denisse Laurent"]
+    invitedGuests: ["Denisse Laurent"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Denisse Laurent", meal: "Carnivore" }
+    ]
   },
-    "mat-laurent": {
+
+  "mat-laurent": {
     displayName: "Mat Laurent",
     allowedGuests: 1,
-    invitedGuests: ["Mat Laurent"]
+    invitedGuests: ["Mat Laurent"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Mat Laurent", meal: "Carnivore" }
+    ]
   },
-    "jan-laurent": {
+
+  "jan-laurent": {
     displayName: "Jan & Adamary Laurent",
     allowedGuests: 2,
-    invitedGuests: ["Jan Laurent","Adamary Laurent"]
+    invitedGuests: ["Jan Laurent", "Adamary Laurent"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jan Laurent", meal: "Carnivore" },
+      { name: "Adamary Laurent", meal: "Carnivore" }
+    ]
   },
-    "cuco-gomez": {
+
+  "cuco-gomez": {
     displayName: "Cuco & Lupita Gomez",
     allowedGuests: 3,
-    invitedGuests: ["Cuco Gomez", "Lupita Gomez", "Santiago Gomez"]
+    invitedGuests: ["Cuco Gomez", "Lupita Gomez", "Santiago Gomez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Cuco Gomez", meal: "Carnivore" },
+      { name: "Lupita Gomez", meal: "Carnivore" },
+      { name: "Santiago Gomez", meal: "Carnivore" }
+    ]
   },
-    "majo-gomez": {
+
+  "majo-gomez": {
     displayName: "Majo Gomez",
     allowedGuests: 1,
-    invitedGuests: ["Majo Gomez"]
+    invitedGuests: ["Majo Gomez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Majo Gomez", meal: "Carnivore" }
+    ]
   },
-    "sio-gonzalez": {
+
+  "sio-gonzalez": {
     displayName: "Siomara Gonzalez & Refugio Gomez",
     allowedGuests: 2,
-    invitedGuests: ["Siomara Gonzalez","Refugio Gomez"]
+    invitedGuests: ["Siomara Gonzalez", "Refugio Gomez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Siomara Gonzalez", meal: "Carnivore" },
+      { name: "Refugio Gomez", meal: "Carnivore" }
+    ]
   },
-    "ainara-gonzalez": {
+
+  "ainara-gonzalez": {
     displayName: "Ainara Gonzalez",
     allowedGuests: 1,
-    invitedGuests: ["Ainara Gonzalez"]
+    invitedGuests: ["Ainara Gonzalez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Ainara Gonzalez", meal: "Carnivore" }
+    ]
   },
-    "yunuen-gonzalez": {
+
+  "yunuen-gonzalez": {
     displayName: "Roberto & Yunuen Gonzalez",
     allowedGuests: 3,
-    invitedGuests: ["Roberto Gonzalez","Yunuen Gonzalez", "Atziari Gonzalez"]
+    invitedGuests: ["Roberto Gonzalez", "Yunuen Gonzalez", "Atziari Gonzalez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Roberto Gonzalez", meal: "Carnivore" },
+      { name: "Yunuen Gonzalez", meal: "Carnivore" },
+      { name: "Atziari Gonzalez", meal: "Carnivore" }
+    ]
   },
-    "ariadna-stamatiades": {
+
+  "ariadna-stamatiades": {
     displayName: "Ariadna & Nicolas Stamatiades",
     allowedGuests: 3,
-    invitedGuests: ["Ariadna Stamatiades","Nicolas Stamatiades","Ani Stamatiades"]
+    invitedGuests: ["Ariadna Stamatiades", "Nicolas Stamatiades", "Ani Stamatiades"],
+    status: 0
   },
-    "caro-paras": {
+
+  "caro-paras": {
     displayName: "Alberto & Carolina Paras",
     allowedGuests: 2,
-    invitedGuests: ["Alberto Paras","Carolina Paras"]
+    invitedGuests: ["Alberto Paras", "Carolina Paras"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Alberto Paras", meal: "Carnivore" },
+      { name: "Carolina Paras", meal: "Carnivore" }
+    ]
   },
-    "lili-navarro": {
+
+  "lili-navarro": {
     displayName: "Ricardo & Liliana Navarro",
     allowedGuests: 2,
-    invitedGuests: ["Ricardo Navarro","Liliana Navarro"]
+    invitedGuests: ["Ricardo Navarro", "Liliana Navarro"],
+    status: 2
   },
-    "sandy-yeager": {
+
+  "sandy-yeager": {
     displayName: "Sandy Yeager & Bill Kimmel",
     allowedGuests: 2,
-    invitedGuests: ["Sandy Yeager","Bill Kimmel"]
+    invitedGuests: ["Sandy Yeager", "Bill Kimmel"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Sandy Yeager", meal: "Carnivore" },
+      { name: "Bill Kimmel", meal: "Carnivore" }
+    ]
   },
-    "nancy-yeager": {
+
+  "nancy-yeager": {
     displayName: "Nancy Yeager & David Butler",
     allowedGuests: 2,
-    invitedGuests: ["Nancy Yeager","David Butler"]
+    invitedGuests: ["Nancy Yeager", "David Butler"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Nancy Yeager", meal: "Carnivore" },
+      { name: "David Butler", meal: "Carnivore" }
+    ]
   },
-    "keila-ostos": {
+
+  "keila-ostos": {
     displayName: "Keila Ostos & Francisco Olea",
     allowedGuests: 2,
-    invitedGuests: ["Keila Ostos", "Francisco Olea"]
+    invitedGuests: ["Keila Ostos", "Francisco Olea"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Keila Ostos", meal: "Carnivore" },
+      { name: "Francisco Olea", meal: "Carnivore" }
+    ]
   },
-    "vale-saraiba": {
+
+  "vale-saraiba": {
     displayName: "Valeria Saraiba & Santiago Villar",
     allowedGuests: 2,
-    invitedGuests: ["Valeria Saraiba","Santiago Villar"]
+    invitedGuests: ["Valeria Saraiba", "Santiago Villar"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Valeria Saraiba", meal: "Carnivore" },
+      { name: "Santiago Villar", meal: "Carnivore" }
+    ]
   },
-    "yoy-armenta": {
+
+  "yoy-armenta": {
     displayName: "Yoy Armenta & Javi Perez",
     allowedGuests: 2,
-    invitedGuests: ["Yoy Armenta","Javi Perez"]
+    invitedGuests: ["Yoy Armenta", "Javi Perez"],
+    status: 2
   },
-    "arlette-rodriguez": {
+
+  "arlette-rodriguez": {
     displayName: "Roberto & Arlette Rodriguez",
     allowedGuests: 2,
-    invitedGuests: ["Arlette Rodriguez","Roberto Rodriguez"]
+    invitedGuests: ["Arlette Rodriguez", "Roberto Rodriguez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Arlette Rodriguez", meal: "Carnivore" },
+      { name: "Roberto Rodriguez", meal: "Carnivore" }
+    ]
   },
-    "luis-rodriguez": {
+
+  "luis-rodriguez": {
     displayName: "Luis Emilio Rodriguez & Julia Sanchez",
     allowedGuests: 2,
-    invitedGuests: ["Luis Emilio Rodriguez","Julia Sanchez" ]
+    invitedGuests: ["Luis Emilio Rodriguez", "Julia Sanchez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Luis Emilio Rodriguez", meal: "Carnivore" },
+      { name: "Julia Sanchez", meal: "Carnivore" }
+    ]
   },
-    "juan-mendez": {
+
+  "juan-mendez": {
     displayName: "Juan & Erica Mendez",
     allowedGuests: 2,
-    invitedGuests: ["Juan Mendez", "Erica Mendez"]
+    invitedGuests: ["Juan Mendez", "Erica Mendez"],
+    status: 2
   },
-    "olidia-castilla": {
+
+  "olidia-castilla": {
     displayName: "Olidia Castilla & Virgilio Farias",
     allowedGuests: 2,
-    invitedGuests: ["Olidia Castilla", "Virgilio Farias"]
+    invitedGuests: ["Olidia Castilla", "Virgilio Farias"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Olidia Castilla", meal: "Carnivore" },
+      { name: "Virgilio Farias", meal: "Carnivore" }
+    ]
   },
-    "maribel-adarme": {
+
+  "maribel-adarme": {
     displayName: "Raul & Maribel Adarme",
     allowedGuests: 2,
-    invitedGuests: ["Raul Adarme","Maribel Adarme"]
+    invitedGuests: ["Raul Adarme", "Maribel Adarme"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Raul Adarme", meal: "Carnivore" },
+      { name: "Maribel Adarme", meal: "Carnivore" }
+    ]
   },
-    "armando-anguiano": {
+
+  "armando-anguiano": {
     displayName: "Armando & Sara Anguiano",
     allowedGuests: 2,
-    invitedGuests: ["Armando Anguiano", "Sara Anguiano"]
+    invitedGuests: ["Armando Anguiano", "Sara Anguiano"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Armando Anguiano", meal: "Carnivore" },
+      { name: "Sara Anguiano", meal: "Carnivore" }
+    ]
   },
-    "ricardo-diaz": {
+
+  "ricardo-diaz": {
     displayName: "Ricardo & Mafer Diaz",
     allowedGuests: 2,
-    invitedGuests: ["Ricardo Diaz", "Mafer Diaz"]
+    invitedGuests: ["Ricardo Diaz", "Mafer Diaz"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Ricardo Diaz", meal: "Carnivore" },
+      { name: "Mafer Diaz", meal: "Carnivore" }
+    ]
   },
-    "miriam-ramirez": {
+
+  "miriam-ramirez": {
     displayName: "Mauricio & Miriam Ramirez",
     allowedGuests: 2,
-    invitedGuests: ["Mauricio Ramirez","Miriam Ramirez"]
+    invitedGuests: ["Mauricio Ramirez", "Miriam Ramirez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Mauricio Ramirez", meal: "Carnivore" },
+      { name: "Miriam Ramirez", meal: "Carnivore" }
+    ]
   },
-    "omar-escalante": {
+
+  "omar-escalante": {
     displayName: "Omar & Seidi Escalante",
     allowedGuests: 2,
-    invitedGuests: ["Omar Escalante","Seidi Escalante"]
+    invitedGuests: ["Omar Escalante", "Seidi Escalante"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Omar Escalante", meal: "Carnivore" },
+      { name: "Seidi Escalante", meal: "Carnivore" }
+    ]
   },
-    "sam-escalante": {
+
+  "sam-escalante": {
     displayName: "Sam Julio Escalante",
     allowedGuests: 1,
-    invitedGuests: ["Sam Julio Escalante"]
+    invitedGuests: ["Sam Julio Escalante"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Sam Julio Escalante", meal: "Carnivore" }
+    ]
   },
-    "santiago-aguero": {
+
+  "santiago-aguero": {
     displayName: "Santiago Agüero",
     allowedGuests: 1,
-    invitedGuests: ["Santiago Agüero"]
+    invitedGuests: ["Santiago Agüero"],
+    status: 0
   },
-    "caro-delarosa": {
+
+  "caro-delarosa": {
     displayName: "Caro De La Rosa",
     allowedGuests: 1,
-    invitedGuests: ["Caro De La Rosa"]
+    invitedGuests: ["Caro De La Rosa"],
+    status: 0
   },
-    "ilze-castillo": {
+
+  "ilze-castillo": {
     displayName: "Ilze Castillo",
     allowedGuests: 1,
-    invitedGuests: ["Ilze Castillo"]
+    invitedGuests: ["Ilze Castillo"],
+    status: 2
   },
-    "ileana-valle": {
+
+  "ileana-valle": {
     displayName: "Ileana Valle",
     allowedGuests: 1,
-    invitedGuests: ["Ileana Valle"]
+    invitedGuests: ["Ileana Valle"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Ileana Valle", meal: "Carnivore" }
+    ]
   },
-    "christina-ponce": {
+
+  "christina-ponce": {
     displayName: "Roberto & Christina Ponce",
     allowedGuests: 2,
-    invitedGuests: ["Roberto Ponce","Christina Ponce"]
+    invitedGuests: ["Roberto Ponce", "Christina Ponce"],
+    status: 0
   },
-    "maricarmen-velazquez": {
+
+  "maricarmen-velazquez": {
     displayName: "Daniel & Maricarmen Velazquez",
     allowedGuests: 2,
-    invitedGuests: ["Daniel Velazquez","Maricarmen Velazquez"]
+    invitedGuests: ["Daniel Velazquez", "Maricarmen Velazquez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Daniel Velazquez", meal: "Carnivore" },
+      { name: "Maricarmen Velazquez", meal: "Carnivore" }
+    ]
   },
-    "abi-adigun": {
+
+  "abi-adigun": {
     displayName: "Abi & Vivien Adigun",
     allowedGuests: 2,
-    invitedGuests: ["Abi Adigun", "Vivien Adigun"]
+    invitedGuests: ["Abi Adigun", "Vivien Adigun"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Abi Adigun", meal: "Carnivore" },
+      { name: "Vivien Adigun", meal: "Carnivore" }
+    ]
   },
-    "claudia-rivero": {
+
+  "claudia-rivero": {
     displayName: "Claudia Rivero & Emmanuel Rodriguez",
     allowedGuests: 2,
-    invitedGuests: ["Claudia Rivero", "Emmanuel Rodriguez"]
+    invitedGuests: ["Claudia Rivero", "Emmanuel Rodriguez"],
+    status: 0
   },
-    "pamela-alvarez": {
+
+  "pamela-alvarez": {
     displayName: "Jose Antonio & Pamela Alvarez",
     allowedGuests: 2,
-    invitedGuests: ["Jose Antonio Alvarez","Pamela Alvarez"]
+    invitedGuests: ["Jose Antonio Alvarez", "Pamela Alvarez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jose Antonio Alvarez", meal: "Carnivore" },
+      { name: "Pamela Alvarez", meal: "Vegetarian" }
+    ]
   },
-    "mariana-page": {
+
+  "mariana-page": {
     displayName: "Jonathan & Mariana Page",
     allowedGuests: 2,
-    invitedGuests: ["Mariana Page", "Jonathan Page"]
+    invitedGuests: ["Mariana Page", "Jonathan Page"],
+    status: 0
   },
-    "ale-delacampa": {
+
+  "ale-delacampa": {
     displayName: "Alejandra De La Campa & Billy Zapata",
     allowedGuests: 2,
-    invitedGuests: ["Alejandra De La Campa", "Billy Zapata"]
+    invitedGuests: ["Alejandra De La Campa", "Billy Zapata"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Alejandra De La Campa", meal: "Carnivore" },
+      { name: "Billy Zapata", meal: "Carnivore" }
+    ]
   },
-    "martha-ibarrondo": {
+
+  "martha-ibarrondo": {
     displayName: "Martha Ibarrondo",
     allowedGuests: 2,
-    invitedGuests: ["Martha Ibarrondo", "Plus One"]
+    invitedGuests: ["Martha Ibarrondo", "Plus One"],
+    status: 2
   },
-    "jack-ocampo": {
+
+  "jack-ocampo": {
     displayName: "Jack & Andrea Brindis",
     allowedGuests: 2,
-    invitedGuests: ["Jack Brindis", "Andrea Brindis"]
+    invitedGuests: ["Jack Brindis", "Andrea Brindis"],
+    status: 2
   },
-    "andrea-gali": {
+
+  "andrea-gali": {
     displayName: "Tony & Andrea Gali",
     allowedGuests: 2,
-    invitedGuests: ["Tony Gali", "Andrea Gali"]
+    invitedGuests: ["Tony Gali", "Andrea Gali"],
+    status: 2
   },
-    "miguel-amozurrutia": {
+
+  "miguel-amozurrutia": {
     displayName: "Miguel & Lorenza Amozurrutia",
     allowedGuests: 2,
-    invitedGuests: ["Miguel Amozurrutia", "Lorenza Amozurrutia"]
+    invitedGuests: ["Miguel Amozurrutia", "Lorenza Amozurrutia"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Miguel Amozurrutia", meal: "Carnivore" },
+      { name: "Lorenza Amozurrutia", meal: "Carnivore" }
+    ]
   },
-    "emma-coutee": {
+
+  "emma-coutee": {
     displayName: "Quojan & Emma Coutee",
     allowedGuests: 2,
-    invitedGuests: ["Quojan Coutee", "Emma Coutee"]
-  },  
-    "sofi-rodriguez": {
+    invitedGuests: ["Quojan Coutee", "Emma Coutee"],
+    status: 0
+  },
+
+  "sofi-rodriguez": {
     displayName: "Ana Sofia Rodriguez",
     allowedGuests: 1,
-    invitedGuests: ["Ana Sofia Rodriguez"]
-  }, 
-    "bani-muñoz": {
+    invitedGuests: ["Ana Sofia Rodriguez"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Ana Sofia Rodriguez", meal: "Carnivore" }
+    ]
+  },
+
+  "bani-muñoz": {
     displayName: "Bani & Viris Muñoz",
     allowedGuests: 3,
-    invitedGuests: ["Bani Muñoz", "Viris Muñoz","Natalia Muñoz"]
-  }, 
-    "cristina-ponce": {
+    invitedGuests: ["Bani Muñoz", "Viris Muñoz", "Natalia Muñoz"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Bani Muñoz", meal: "Carnivore" },
+      { name: "Viris Muñoz", meal: "Carnivore" },
+      { name: "Natalia Muñoz", meal: "Carnivore" }
+    ]
+  },
+
+  "cristina-ponce": {
     displayName: "Roberto & Cristina Ponce",
     allowedGuests: 2,
-    invitedGuests: ["Cristina Ponce", "Roberto Ponce"]
+    invitedGuests: ["Cristina Ponce", "Roberto Ponce"],
+    status: 0
   },
-    "vic-garcia": {
+
+  "vic-garcia": {
     displayName: "Victoria Garcia",
     allowedGuests: 1,
-    invitedGuests: ["Victoria Garcia"]
+    invitedGuests: ["Victoria Garcia"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Victoria Garcia", meal: "Carnivore" }
+    ]
   },
-    "grace-adams": {
+
+  "grace-adams": {
     displayName: "Grace Adams",
     allowedGuests: 1,
-    invitedGuests: ["Grace Adams"]
+    invitedGuests: ["Grace Adams"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Grace Adams", meal: "Carnivore" }
+    ]
   },
-    "enrique-castaneira": {
-    displayName: "Grace Adams",
+
+  "enrique-castaneira": {
+    displayName: "Enrique Castaneira",
     allowedGuests: 1,
-    invitedGuests: ["Grace Adams"]
+    invitedGuests: ["Enrique Castaneira"],
+    status: 0
   },
-    "alex-thomas": {
+
+  "alex-thomas": {
     displayName: "Alex Thomas",
     allowedGuests: 1,
-    invitedGuests: ["Alex Thomas"]
+    invitedGuests: ["Alex Thomas"],
+    status: 0
   },
-    "alex-szabo": {
+
+  "alex-szabo": {
     displayName: "Aex & Dina Szabo",
     allowedGuests: 2,
-    invitedGuests: ["Alex Szabo","Dina Szabo"]
+    invitedGuests: ["Alex Szabo", "Dina Szabo"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Alex Szabo", meal: "Carnivore" },
+      { name: "Dina Szabo", meal: "Carnivore" }
+    ]
   },
-    "yadira-vargas": {
+
+  "yadira-vargas": {
     displayName: "Jimbo & Yadira Vargas",
     allowedGuests: 2,
-    invitedGuests: ["Jimbo Vargas", "Yadira Vargas"]
+    invitedGuests: ["Jimbo Vargas", "Yadira Vargas"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Jimbo Vargas", meal: "Carnivore" },
+      { name: "Yadira Vargas", meal: "Carnivore" }
+    ]
   },
-    "gibran-hadad": {
+
+  "gibran-hadad": {
     displayName: "Gibran & Patsy Hadad",
     allowedGuests: 2,
-    invitedGuests: ["Gibran Hadad", "Patsy Hadad"]
+    invitedGuests: ["Gibran Hadad", "Patsy Hadad"],
+    status: 0
   },
-    "adriana-ruiz": {
+
+  "adriana-ruiz": {
     displayName: "Joel & Adriana Ruiz",
     allowedGuests: 2,
-    invitedGuests: ["Joel Ruiz", "Adriana Ruiz"]
+    invitedGuests: ["Joel Ruiz", "Adriana Ruiz"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Joel Ruiz", meal: "Carnivore" },
+      { name: "Adriana Ruiz", meal: "Carnivore" }
+    ]
   },
-    "gladys-araujo": {
+
+  "gladys-araujo": {
     displayName: "Osvaldo & Gladys Araujo",
     allowedGuests: 2,
-    invitedGuests: ["Osvaldo Araujo", "Gladys Araujo"]
+    invitedGuests: ["Osvaldo Araujo", "Gladys Araujo"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Osvaldo Araujo", meal: "Carnivore" },
+      { name: "Gladys Araujo", meal: "Carnivore" }
+    ]
   },
-    "laura-cherit": {
+
+  "laura-cherit": {
     displayName: "Laura Cherit",
     allowedGuests: 2,
-    invitedGuests: ["Laura Cherit", "Plus One"]
+    invitedGuests: ["Laura Cherit", "Plus One"],
+    status: 0
   },
-    "paty-szabo": {
+
+  "paty-szabo": {
     displayName: "Patricia Szabo",
     allowedGuests: 1,
-    invitedGuests: ["Patricia Szabo"]
+    invitedGuests: ["Patricia Szabo"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Patricia Szabo", meal: "Carnivore" }
+    ]
   },
-   "aayush": {
+
+  "aayush": {
     displayName: "Aayush Gaikwad",
     allowedGuests: 1,
-    invitedGuests: ["Aayush Gaikwad"]
+    invitedGuests: ["Aayush Gaikwad"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Aayush Gaikwad", meal: "Carnivore" }
+    ]
   },
-    "rosita-morales": {
+
+  "rosita-morales": {
     displayName: "Ruben & Rosita Morales",
     allowedGuests: 2,
-    invitedGuests: ["Rosita Morales", "Ruben Morales"]
+    invitedGuests: ["Rosita Morales", "Ruben Morales"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Rosita Morales", meal: "Carnivore" },
+      { name: "Ruben Morales", meal: "Carnivore" }
+    ]
   },
-   "jouss": {
+
+  "jouss": {
     displayName: "Jouss Carbajal",
     allowedGuests: 2,
-    invitedGuests: ["Jouss Carbajal", "Alejandro Langarica"]
+    invitedGuests: ["Jouss Carbajal", "Alejandro Langarica"],
+    status: 0
   },
-    "ana-laura": {
+
+  "ana-laura": {
     displayName: "Ana Laura & Gustav Juul",
     allowedGuests: 2,
-    invitedGuests: ["Ana Laura Juul", "Gistav Juul"]
+    invitedGuests: ["Ana Laura Juul", "Gistav Juul"],
+    status: 0
   },
-    "James": {
+
+  "James": {
     displayName: "James Masciola",
     allowedGuests: 2,
-    invitedGuests: ["James Masciola", "Plus One"]
+    invitedGuests: ["James Masciola", "Plus One"],
+    status: 0
   },
-     "Will-Marret": {
+
+  "Will-Marret": {
     displayName: "Will Marett",
     allowedGuests: 2,
-    invitedGuests: ["Will Marett", "Plus One"]
+    invitedGuests: ["Will Marett", "Plus One"],
+    status: 1,
+    confirmedGuests: [
+      { name: "Will Marett", meal: "Carnivore" },
+      { name: "Marissa Battaglia", meal: "Vegetarian" }
+    ]
   },
-    "javi-arena": {
+
+  "javi-arena": {
     displayName: "Javi Arena",
     allowedGuests: 2,
-    invitedGuests: ["Javi Arena", "Plus One"]
-  },
-  
+    invitedGuests: ["Javi Arena", "Plus One"],
+    status: 0
+  }
+
 };
 
 const params = new URLSearchParams(window.location.search);
@@ -598,6 +1110,8 @@ const yesOptions = document.getElementById("yesOptions");
 const meal = document.getElementById("meal");
 const guestCount = document.getElementById("guestCount");
 const rsvpForm = document.getElementById("rsvpForm");
+const rsvpStatusDisplay = document.getElementById("rsvpStatusDisplay");
+const rsvpFormContent = document.getElementById("rsvpFormContent");
 
 guestPreview.textContent = `${currentGuest.displayName}`;
 guestName.textContent = currentGuest.displayName;
@@ -605,6 +1119,107 @@ nameInput.value = currentGuest.displayName;
 
 guestLimitText.textContent =
   `We have reserved ${currentGuest.allowedGuests} seat${currentGuest.allowedGuests > 1 ? "s" : ""} in your honor.`;
+/* =========================
+   RSVP STATUS DISPLAY
+========================= */
+
+function displayRSVPStatus() {
+
+  if (!rsvpStatusDisplay || !rsvpFormContent) return;
+
+  // STATUS 0 = NO RSVP YET
+  if (currentGuest.status === 0 || currentGuest.status === undefined) {
+
+    // Show the normal RSVP section
+    rsvpStatusDisplay.classList.add("hidden");
+    rsvpFormContent.classList.remove("hidden");
+
+    return;
+  }
+
+  // For STATUS 1 or 2:
+  // Hide EVERYTHING inside the normal RSVP form area
+  rsvpFormContent.classList.add("hidden");
+
+  // Show the status display
+  rsvpStatusDisplay.classList.remove("hidden");
+
+
+  // STATUS 1 = ATTENDING
+  if (currentGuest.status === 1) {
+
+    const confirmedGuests = currentGuest.confirmedGuests || [];
+
+    let guestsHTML = "";
+
+    confirmedGuests.forEach(guest => {
+      guestsHTML += `
+        <div class="confirmed-guest">
+          <p class="confirmed-guest-name">${guest.name}</p>
+          <p class="confirmed-guest-meal">${guest.meal}</p>
+        </div>
+      `;
+    });
+
+    rsvpStatusDisplay.innerHTML = `
+      <div class="rsvp-confirmed">
+
+        <p class="section-label">RSVP</p>
+
+        <h2>We’ll See You There</h2>
+
+        <div class="confirmed-guests-list">
+          ${guestsHTML}
+        </div>
+
+        <p class="soft-copy">
+          We are so happy to celebrate this special day with you.
+        </p>
+
+      </div>
+    `;
+
+    return;
+  }
+
+
+  // STATUS 2 = NOT ATTENDING
+  if (currentGuest.status === 2) {
+
+    const names = currentGuest.invitedGuests || [];
+
+    let namesHTML = "";
+
+    names.forEach(name => {
+      namesHTML += `
+        <p class="declined-guest-name">${name}</p>
+      `;
+    });
+
+    rsvpStatusDisplay.innerHTML = `
+      <div class="rsvp-declined">
+
+        <p class="section-label">RSVP</p>
+
+        <h2>We Will Miss You</h2>
+
+        <div class="declined-guests-list">
+          ${namesHTML}
+        </div>
+
+        <p class="soft-copy">
+          We received your response and understand that you will not be able to attend.
+        </p>
+
+      </div>
+    `;
+
+    return;
+  }
+}
+
+
+displayRSVPStatus();
 
 function buildGuestCountOptions() {
   guestCount.innerHTML = "";
