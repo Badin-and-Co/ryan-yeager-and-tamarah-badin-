@@ -1050,7 +1050,10 @@ const guests = {
     displayName: "Jouss Carbajal",
     allowedGuests: 2,
     invitedGuests: ["Jouss Carbajal", "Alejandro Langarica"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Jouss Carbajal", meal: "Carnivore" }
+    ]
   },
 
   "ana-laura": {
