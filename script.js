@@ -17,7 +17,8 @@ const guests = {
     invitedGuests: ["Nicole Yeager"],
     status: 1,
     confirmedGuests: [
-      { name: "Nicole Yeager", meal: "Carnivore" }
+      { name: "Nicole Yeager", meal: "Carnivore" },
+      { name: "Etienne Black", meal: "Carnivore" }
     ]
   },
 
@@ -181,7 +182,12 @@ const guests = {
     displayName: "Jorge Sucar & Yesi Briceño",
     allowedGuests: 3,
     invitedGuests: ["Jorge Sucar", "Yesi Briceño", "Natalia Sucar"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Jorge Sucar", meal: "Vegetarian" },
+      { name: "Yesica Briceño", meal: "Carnivore" },
+      { name: "Natalia Sucar", meal: "Carnivore" }
+    ]
   },
 
   "emil-sucar": {
@@ -250,7 +256,7 @@ const guests = {
     displayName: "Alejandra Arenas & Alejandro Ramirez",
     allowedGuests: 4,
     invitedGuests: ["Alejandra Arenas", "Alejandro Ramirez", "Camila Ramirez", "Zoe Ramirez"],
-    status: 0
+    status: 2
   },
 
   "gerardo-arenas": {
@@ -280,14 +286,14 @@ const guests = {
     displayName: "Anuar Badin & Alejandra Lepe",
     allowedGuests: 2,
     invitedGuests: ["Anuar Badin", "Alejandra Lepe"],
-    status: 0
+    status: 2
   },
 
   "marcela-arechandieta": {
     displayName: "Marcela Arechandieta",
     allowedGuests: 1,
     invitedGuests: ["Marcela Arechandieta"],
-    status: 0
+    status: 2
   },
 
   "nicolas-badin": {
@@ -582,7 +588,7 @@ const guests = {
     displayName: "Ariadna & Nicolas Stamatiades",
     allowedGuests: 3,
     invitedGuests: ["Ariadna Stamatiades", "Nicolas Stamatiades", "Ani Stamatiades"],
-    status: 0
+    status: 2
   },
 
   "caro-paras": {
@@ -763,7 +769,7 @@ const guests = {
     displayName: "Santiago Agüero",
     allowedGuests: 1,
     invitedGuests: ["Santiago Agüero"],
-    status: 0
+    status: 2
   },
 
   "caro-delarosa": {
@@ -794,7 +800,7 @@ const guests = {
     displayName: "Roberto & Christina Ponce",
     allowedGuests: 2,
     invitedGuests: ["Roberto Ponce", "Christina Ponce"],
-    status: 0
+    status: 2
   },
 
   "maricarmen-velazquez": {
@@ -823,7 +829,7 @@ const guests = {
     displayName: "Claudia Rivero & Emmanuel Rodriguez",
     allowedGuests: 2,
     invitedGuests: ["Claudia Rivero", "Emmanuel Rodriguez"],
-    status: 0
+    status: 2
   },
 
   "pamela-alvarez": {
@@ -841,7 +847,11 @@ const guests = {
     displayName: "Jonathan & Mariana Page",
     allowedGuests: 2,
     invitedGuests: ["Mariana Page", "Jonathan Page"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Mariana Page", meal: "Carnivore" },
+      { name: "Jonathan Page", meal: "Carnivore" }
+    ]
   },
 
   "ale-delacampa": {
@@ -920,7 +930,7 @@ const guests = {
     displayName: "Roberto & Cristina Ponce",
     allowedGuests: 2,
     invitedGuests: ["Cristina Ponce", "Roberto Ponce"],
-    status: 0
+    status: 2
   },
 
   "vic-garcia": {
@@ -983,7 +993,7 @@ const guests = {
     displayName: "Gibran & Patsy Hadad",
     allowedGuests: 2,
     invitedGuests: ["Gibran Hadad", "Patsy Hadad"],
-    status: 0
+    status: 2
   },
 
   "adriana-ruiz": {
@@ -1012,7 +1022,7 @@ const guests = {
     displayName: "Laura Cherit",
     allowedGuests: 2,
     invitedGuests: ["Laura Cherit", "Plus One"],
-    status: 0
+    status: 2
   },
 
   "paty-szabo": {
@@ -1067,7 +1077,7 @@ const guests = {
     displayName: "James Masciola",
     allowedGuests: 2,
     invitedGuests: ["James Masciola", "Plus One"],
-    status: 0
+    status: 2
   },
 
   "Will-Marret": {
