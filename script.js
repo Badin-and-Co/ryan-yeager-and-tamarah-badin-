@@ -372,7 +372,11 @@ const guests = {
     displayName: "Peter & Janis Burke",
     allowedGuests: 2,
     invitedGuests: ["Peter Burke", "Janis Burke"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Peter Burke", meal: "Carnivore" },
+      { name: "Janis Burke", meal: "Carnivore" }
+    ]
   },
 
   "greg-eversole": {
@@ -776,7 +780,7 @@ const guests = {
     displayName: "Caro De La Rosa",
     allowedGuests: 1,
     invitedGuests: ["Caro De La Rosa"],
-    status: 0
+    status: 2
   },
 
   "ilze-castillo": {
@@ -1095,7 +1099,7 @@ const guests = {
     displayName: "Javi Arena",
     allowedGuests: 2,
     invitedGuests: ["Javi Arena", "Plus One"],
-    status: 0
+    status: 2
   }
 
 };
