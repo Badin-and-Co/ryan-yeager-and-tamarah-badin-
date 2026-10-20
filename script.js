@@ -1190,9 +1190,15 @@ const guests = {
    "kamila-hasanova": {
     displayName: "Kamila Hasanova",
     allowedGuests: 1,
-    invitedGuests: ["Kamila Hasanova", "Kamila Hasanova"],
+    invitedGuests: ["Kamila Hasanova"],
     status: 0
   },
+     "michael-sutter": {
+    displayName: "Michael Sutter",
+    allowedGuests: 1,
+    invitedGuests: ["Michael Sutter"],
+    status: 0
+  }
 
 };
 
