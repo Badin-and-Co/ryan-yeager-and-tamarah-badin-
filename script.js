@@ -719,11 +719,7 @@ const guests = {
     displayName: "Armando & Sara Anguiano",
     allowedGuests: 2,
     invitedGuests: ["Armando Anguiano", "Sara Anguiano"],
-    status: 1,
-    confirmedGuests: [
-      { name: "Armando Anguiano", meal: "Carnivore" },
-      { name: "Sara Anguiano", meal: "Carnivore" }
-    ]
+    status: 2
   },
 
   "ricardo-diaz": {
@@ -1100,7 +1096,103 @@ const guests = {
     allowedGuests: 2,
     invitedGuests: ["Javi Arena", "Plus One"],
     status: 2
-  }
+  },
+    "mateo-ruiz": {
+    displayName: "Mateo Ruiz",
+    allowedGuests: 1,
+    invitedGuests: ["Mateo Ruiz"],
+    status: 0
+  },
+  "maria-velazquez": {
+    displayName: "Maria Velazquez",
+    allowedGuests: 1,
+    invitedGuests: ["Maria Velazquez"],
+    status: 0
+  },
+  "nick-melugin": {
+    displayName: "Nick & Emma Melugin",
+    allowedGuests: 2,
+    invitedGuests: ["Nick Melugin", "Emma Melugin"],
+    status: 0
+  },
+  "ashley-melugin": {
+    displayName: "Ashley Melugin",
+    allowedGuests: 1,
+    invitedGuests: ["Ashley Melugin"],
+    status: 0
+  },
+   "jacob-eversole": {
+    displayName: "Jacob Eversole",
+    allowedGuests: 1,
+    invitedGuests: ["Jacob Eversole"],
+    status: 0
+  },
+   "grace-eversole": {
+    displayName: "Grace Eversole",
+    allowedGuests: 2,
+    invitedGuests: ["Nick Melugin", "Emma Melugin"],
+    status: 0
+  },
+   "olivia-sutter": {
+    displayName: "Olivia Sutter",
+    allowedGuests: 1,
+    invitedGuests: ["Olivia Sutter"],
+    status: 0
+  },
+   "josie-sutter": {
+    displayName: "Josie Sutter",
+    allowedGuests: 1,
+    invitedGuests: ["Josie Sutter"],
+    status: 0
+  },
+   "rebeca-lee": {
+    displayName: "Rebeca & Austin Lee",
+    allowedGuests: 2,
+    invitedGuests: ["Rebeca Lee", "Austin Lee"],
+    status: 0
+  },
+   "sara-ortiz": {
+    displayName: "Sara & Samuel Ortiz",
+    allowedGuests: 2,
+    invitedGuests: ["Sara Ortiz", "Samuel Ortiz"],
+    status: 0
+  },
+   "carmen-lam": {
+    displayName: "Carmen & Justin Lam",
+    allowedGuests: 2,
+    invitedGuests: ["Carmen Lam", "Justin Lam"],
+    status: 0
+  },
+   "carmen-iturbe": {
+    displayName: "Carmen Iturbe",
+    allowedGuests: 2,
+    invitedGuests: ["Carmen Iturbe", "Plus One"],
+    status: 0
+  },
+   "ana-iturbe": {
+    displayName: "Ana Iturbe",
+    allowedGuests: 1,
+    invitedGuests: ["Ana Iturbe"],
+    status: 0
+  },
+   "juan-perez": {
+    displayName: "Juan Luis & Andrea Perez",
+    allowedGuests: 2,
+    invitedGuests: ["Juan Luis Perez", "Andrea Perez"],
+    status: 0
+  },
+   "val-zaragoza": {
+    displayName: "Val Zaragoza",
+    allowedGuests: 2,
+    invitedGuests: ["Val Zaragoza", "Plus One"],
+    status: 0
+  },
+   "kamila-hasanova": {
+    displayName: "Kamila Hasanova",
+    allowedGuests: 1,
+    invitedGuests: ["Kamila Hasanova", "Kamila Hasanova"],
+    status: 0
+  },
 
 };
 
