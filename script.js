@@ -1110,9 +1110,9 @@ const guests = {
     status: 0
   },
   "nick-melugin": {
-    displayName: "Nick & Emma Melugin",
+    displayName: "Nicholas & Emma Melugin",
     allowedGuests: 2,
-    invitedGuests: ["Nick Melugin", "Emma Melugin"],
+    invitedGuests: ["Nicholas Melugin", "Emma Melugin"],
     status: 0
   },
   "ashley-melugin": {
@@ -1129,8 +1129,8 @@ const guests = {
   },
    "grace-eversole": {
     displayName: "Grace Eversole",
-    allowedGuests: 2,
-    invitedGuests: ["Nick Melugin", "Emma Melugin"],
+    allowedGuests: 1,
+    invitedGuests: ["Grace Eversole"],
     status: 0
   },
    "olivia-sutter": {
