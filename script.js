@@ -1101,7 +1101,10 @@ const guests = {
     displayName: "Mateo Ruiz",
     allowedGuests: 1,
     invitedGuests: ["Mateo Ruiz"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Mateo Ruiz", meal: "Carnivore" },
+    ]
   },
   "maria-velazquez": {
     displayName: "Maria Velazquez",
@@ -1119,7 +1122,10 @@ const guests = {
     displayName: "Ashley Melugin",
     allowedGuests: 1,
     invitedGuests: ["Ashley Melugin"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Ashley Melugin", meal: "Carnivore" },
+    ]
   },
    "jacob-eversole": {
     displayName: "Jacob Eversole",
@@ -1167,7 +1173,12 @@ const guests = {
     displayName: "Carmen Iturbe",
     allowedGuests: 2,
     invitedGuests: ["Carmen Iturbe", "Plus One"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Carmen Iturbe", meal: "Carnivore" },
+      { name: "Jose Antonio", meal: "Carnivore" }
+    ]
+
   },
    "ana-iturbe": {
     displayName: "Ana Iturbe",
