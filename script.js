@@ -1184,7 +1184,10 @@ const guests = {
     displayName: "Ana Iturbe",
     allowedGuests: 1,
     invitedGuests: ["Ana Iturbe"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Ana Iturbe", meal: "Carnivore" }
+    ]
   },
    "juan-perez": {
     displayName: "Juan Luis & Andrea Perez",
