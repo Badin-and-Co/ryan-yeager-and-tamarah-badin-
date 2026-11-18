@@ -953,20 +953,6 @@ const guests = {
     ]
   },
 
-  "enrique-castaneira": {
-    displayName: "Enrique Castaneira",
-    allowedGuests: 1,
-    invitedGuests: ["Enrique Castaneira"],
-    status: 0
-  },
-
-  "alex-thomas": {
-    displayName: "Alex Thomas",
-    allowedGuests: 1,
-    invitedGuests: ["Alex Thomas"],
-    status: 0
-  },
-
   "alex-szabo": {
     displayName: "Aex & Dina Szabo",
     allowedGuests: 2,
@@ -1137,7 +1123,10 @@ const guests = {
     displayName: "Grace Eversole",
     allowedGuests: 1,
     invitedGuests: ["Grace Eversole"],
-    status: 0
+    status: 1,
+    confirmedGuests: [
+      { name: "Grace Eversole", meal: "Carnivore" }
+    ]
   },
    "olivia-sutter": {
     displayName: "Olivia Sutter",
