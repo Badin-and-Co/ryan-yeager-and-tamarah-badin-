@@ -18,7 +18,6 @@ const guests = {
     status: 1,
     confirmedGuests: [
       { name: "Nicole Yeager", meal: "Carnivore" },
-      { name: "Etienne Black", meal: "Carnivore" }
     ]
   },
 
